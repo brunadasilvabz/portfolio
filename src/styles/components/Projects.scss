@@ -1,0 +1,12 @@
+@import "../App.scss";
+
+.carousel {
+  background-color: red;
+  width: 100vh;
+  display: flex;
+  gap: 10px;
+  &_div {
+    display: flex;
+    flex-direction: column;
+  }
+}
