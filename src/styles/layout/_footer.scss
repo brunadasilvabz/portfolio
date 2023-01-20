@@ -1,0 +1,10 @@
+.footer {
+  background-color: $color-darkblue;
+  padding: 20px;
+
+  &_list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}

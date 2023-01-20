@@ -1,0 +1,42 @@
+// @import "core/reset.scss";
+
+/*@import 'core/variables';
+@import 'core/reset';
+@import 'components/code';
+@import 'components/links';
+@import 'layout/page';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'pages/index'; */
+
+@import "core/variables";
+@import "core/reset";
+@import "layout/header";
+@import "layout/landing";
+@import "layout/about";
+@import "layout/projects";
+@import "layout/contact";
+@import "layout/footer";
+
+:root {
+  font-family: $font-main;
+}
+
+// :root{
+//     overflow-x: hidden;
+// }
+
+.body {
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+}
+// .main {
+//   padding: 25px;
+// }
+
+.fa-brands {
+  color: $color-darklilac;
+}

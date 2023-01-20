@@ -1,0 +1,56 @@
+// fonts
+
+$font-main: "EB Garamond", serif;
+$font-secondary: "Shadows Into Light", cursive;
+
+// colors
+// $color-bg: #f3f4f5;
+// $color-secondary: #999;
+
+$color-lilac: #dbbfde; //(lila claro)
+$color-darkgreen: #a0b59f; //(verde oscuro)
+$color-darkblue: #91b3b1; //(azul oscuro)
+$color-darklilac: #a38aa8; //(lila oscuro)
+
+$defaultFontSize: 16;
+@function rem($pixels) {
+  @return ($pixels/$defaultFontSize * 1rem);
+}
+
+//Mixins
+@mixin t($fontSize, $fontHeight) {
+  font-size: $fontSize;
+  line-height: $fontHeight;
+}
+/* ejemplo:
+para escribir en css:
+font-size: 18px;
+line-height:20px;
+
+USANDO LA FC REM
+font-size: rem(18);
+line-height: rem(20);
+
+USANDO EL @MIXIN
+@include t(rem(18),rem(20));
+
+*/
+
+@mixin tablet {
+  @media all and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media all and (min-width: 1200px) {
+    @content;
+  }
+}
+
+// @media all and (min-width: 768px) {
+//   height: 60px;
+//   padding: 10px 40px 10px 41px;
+//   flex-direction: row;
+//   justify-content: space-between;
+// }
