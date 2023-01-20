@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "../styles/App.scss";
-import ProjectsCarousel from "./components/ProjectsCarousel";
+import ProjectsCarousel from "./ProjectsCarousel";
 
 function App() {
   return (

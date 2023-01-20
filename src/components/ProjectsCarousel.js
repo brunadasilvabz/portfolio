@@ -1,5 +1,6 @@
-import {Carousel} from "react-bootstrap";
+import Carousel from 'react-bootstrap/Carousel';
 import "bootstrap/dist/css/bootstrap.css";
+
 
 const ProjectsCarousel = () => {
     return (
@@ -14,6 +15,12 @@ const ProjectsCarousel = () => {
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
+          <Carousel.Item>
+            <div>
+                <button>hi</button>
+                <button>hxfgf</button>
+            </div>
+          </Carousel.Item>
         </Carousel.Item>
         <Carousel.Item>
           <img
