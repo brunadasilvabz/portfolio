@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "../styles/App.scss";
+import ProjectsCarousel from "./components/ProjectsCarousel";
 
 function App() {
   return (
@@ -45,7 +46,10 @@ function App() {
         </section>
         <section className="projectSection">
           <h2 className="projectSection_title">mis proyectos</h2>
-          <div className="projectSection_div">carrusel!</div>
+          <div className="projectSection_div"> 
+            <ProjectsCarousel>
+            </ProjectsCarousel>
+          </div>
         </section>
         <section className="contactSection">
           <h2 className="contactSection_title">contacta conmigo</h2>
