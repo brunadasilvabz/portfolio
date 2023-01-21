@@ -1,6 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "../styles/App.scss";
-import ProjectsCarousel from "./ProjectsCarousel";
+import SlideSmallerScreen from "./SlideSmallerScreen";
+import SlideBigScreen from "./SlideBigScreen";
+
+
+
+
 
 function App() {
   return (
@@ -46,10 +51,11 @@ function App() {
         </section>
         <section className="projectSection">
           <h2 className="projectSection_title">mis proyectos</h2>
-          <div className="projectSection_div"> 
-            <ProjectsCarousel>
-            </ProjectsCarousel>
-          </div>
+          <div className="projectSection_div2 showSmaller"><SlideSmallerScreen></SlideSmallerScreen></div>
+          <div className="projectSection_div1 showBigger"><SlideBigScreen></SlideBigScreen></div>
+          
+
+          
         </section>
         <section className="contactSection">
           <h2 className="contactSection_title">contacta conmigo</h2>

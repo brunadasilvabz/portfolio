@@ -17,6 +17,8 @@
 @import "layout/projects";
 @import "layout/contact";
 @import "layout/footer";
+@import "~bootstrap/scss/bootstrap";
+@import "components/slide.scss";
 
 :root {
   font-family: $font-main;
@@ -39,4 +41,28 @@
 
 .fa-brands {
   color: $color-darklilac;
+}
+
+// @media all and (max-width: 768px) {
+//   .showBigger {
+//     display: none;
+//   }
+// }
+
+// @media all and (max-width: 768px) {
+//   .showSmaller {
+//     display: none;
+//   }
+// }
+
+@media all and (min-width: 0px) and (max-width: 767px) {
+  .showBigger {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .showSmaller {
+    display: none;
+  }
 }
