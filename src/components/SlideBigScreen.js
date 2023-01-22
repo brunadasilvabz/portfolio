@@ -14,7 +14,7 @@ const SlideBigScreen = () => {
         {/* 1ST SLIDE */}
 
       <Carousel.Item className='carousel_item'>
-        <Card className='card'>
+        <Card className='card' style={{ width: '18rem' }}>
           <div className='card_imgWrapper'>
             <Card.Img className="img" variant="top" src={gatito1} />
           </div>
@@ -31,7 +31,7 @@ const SlideBigScreen = () => {
             </div>
           </Card.Body>
         </Card>
-        <Card className='card'>
+        <Card className='card' style={{ width: '18rem' }}>
           <div className='card_imgWrapper'>
             <Card.Img className="img" variant="top" src={gatito1} />
           </div>
@@ -48,7 +48,7 @@ const SlideBigScreen = () => {
             </div>
           </Card.Body>
         </Card>
-        <Card className='card'>
+        <Card className='card' style={{ width: '18rem' }}>
           <div className='card_imgWrapper'>
             <Card.Img className="img" variant="top" src={gatito1} />
           </div>
