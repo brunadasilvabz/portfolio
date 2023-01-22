@@ -3,7 +3,7 @@ import "../styles/components/slide.scss";
 import gatito1 from '../images/gatito1.jpg';
 import gatito2 from '../images/gatito2.jpg';
 import gatito3 from '../images/gatito3.jpg';
-import gatito4 from '../images/gatito4.jpg';
+// import gatito4 from '../images/gatito4.jpg';
 
 
 const SlideBigScreen = () => {

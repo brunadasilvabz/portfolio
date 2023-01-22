@@ -1,5 +1,9 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+import { useState } from "react";
+
+//STYLES
 import "../styles/App.scss";
+
+//COMPONENTS
 import Header from "./Header";
 import Landing from "./Landing";
 import AboutMe from "./AboutMe";
@@ -8,14 +12,13 @@ import ContactMe from "./ContactMe";
 import Footer from "./Footer";
 
 
-
-
-
-
 function App() {
+
+const [toggle, setToggle] = useState(true);
+
   return (
     <div className="App">
-      <Header></Header>
+      <Header toggle={toggle} setToggle={setToggle}></Header>
       <main className="main">
         <Landing></Landing>
         <AboutMe></AboutMe>
