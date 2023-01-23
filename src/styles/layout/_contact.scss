@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  background-color: $color-darkgreen;
 
   &_title {
     margin-top: 10px;
@@ -12,5 +13,39 @@
     @media all and (min-width: 768px) {
       font-size: 50px;
     }
+  }
+
+  &_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // &-text {
+    //   // asdasd
+    // }
+
+    &-elements {
+      display: flex;
+      gap: 40px;
+    }
+  }
+
+  // .formDiv {
+  //   &-text {
+  //     color: pink;
+  //   }
+  // } NO FUNCIONA
+}
+
+.link_element {
+  margin: 20px 0 20px 0;
+  background-color: pink;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  padding-top: 10px;
+
+  &-link {
+    text-decoration: none;
   }
 }
