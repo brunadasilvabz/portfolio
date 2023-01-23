@@ -7,6 +7,7 @@ import "../styles/App.scss";
 import Header from "./Header";
 import Landing from "./Landing";
 import AboutMe from "./AboutMe";
+import Skills from "./Skills";
 import Projects from "./Projects";
 import ContactMe from "./ContactMe";
 import Footer from "./Footer";
@@ -22,6 +23,7 @@ const [toggle, setToggle] = useState(true);
       <main className="main">
         <Landing></Landing>
         <AboutMe></AboutMe>
+        <Skills></Skills>
         <Projects></Projects>
         <ContactMe></ContactMe>
       </main>

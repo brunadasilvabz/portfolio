@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 const Landing = () => {
     return (
-        <section className="landingSection">
+        <section id="home" className="landingSection">
           <h1 className="landingSection_title">hola, soy Bruna</h1>
           <p className="landingSection_desc">desarrolladora front-end</p>
           <ul className="landingSection_list">

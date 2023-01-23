@@ -23,6 +23,23 @@
   }
 }
 
+.nav {
+  // background-color: rgb(219, 76, 100);
+  // margin-left: 0px;
+  margin-top: 10px;
+  width: 10vw;
+
+  &_list {
+    padding-left: 1px;
+
+    &-link {
+      text-decoration: none;
+      padding: 2px;
+      color: black;
+      background-color: rgba(255, 192, 203, 0.253);
+    }
+  }
+}
 // .footer {
 //   position: fixed;
 //   left: 0;

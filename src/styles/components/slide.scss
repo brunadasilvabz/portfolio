@@ -1,7 +1,6 @@
 .carousel {
-  background-color: red;
+  // background-color: red;
   height: rem(550);
-
   &_item {
     width: 100%;
     height: 100%;
@@ -9,7 +8,7 @@
 }
 
 .card {
-  margin: 20px 15px;
+  margin: 20px 40px;
 
   &_imgWrapper {
     height: 50%;
@@ -52,9 +51,86 @@
     display: flex;
   }
 
+  .carousel-control-prev-icon {
+    margin-left: -190px;
+  }
+
+  .carousel-control-next-icon {
+    margin-right: -180px;
+  }
+
+  .carousel {
+    width: 100vh;
+    height: rem(580);
+    &_item {
+      // background-color: red;
+      overflow: hidden;
+      height: 100%;
+      overflow: hidden;
+      width: 100%;
+    }
+  }
+
   .card {
+    background-color: red;
     margin: 20px 15px;
     width: calc(100% / 3);
+
+    &-img {
+      width: 100%;
+    }
+
+    &_body {
+      &-div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+    display: flex;
+  }
+
+  .carousel-control-prev-icon {
+    margin-left: -190px;
+  }
+
+  .carousel-control-next-icon {
+    margin-right: -180px;
+  }
+
+  .carousel {
+    height: rem(550);
+    width: 60rem;
+    &_item {
+      // background-color: red;
+      overflow: hidden;
+      height: 100%;
+      overflow: hidden;
+      width: 100%;
+    }
+  }
+
+  .card {
+    background-color: red;
+    margin: 20px 15px;
+    width: calc(100% / 3);
+
+    &-img {
+      width: 100%;
+    }
+
+    &_body {
+      &-div {
+        display: flex;
+        flex-direction: row;
+      }
+    }
   }
 }
 
