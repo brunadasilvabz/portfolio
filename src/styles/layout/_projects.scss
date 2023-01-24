@@ -1,9 +1,11 @@
 .projectSection {
+  background-color: $color-darkgreen;
+  height: 120vh;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
 
   // @media all and (min-width: 768px) {
 
@@ -21,4 +23,16 @@
   // &_div {
   //   height: 500px;
   // }
+
+  &_div1 {
+    background-color: $color-lilac;
+    padding: 25px;
+    border-radius: 20px;
+  }
+
+  &_div2 {
+    background-color: $color-lilac;
+    padding-top: 25px;
+    border-radius: 20px;
+  }
 }
