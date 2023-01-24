@@ -2,7 +2,7 @@
 const ContactMe = () => {
     return (
         <section id="contactMe" className="contactSection">
-          <h2 className="contactSection_title">contacta conmigo</h2>
+          <h2 className="contactSection_title">Contacto</h2>
           
           <div className="contactSection_div">
             <p className="contactSection_div-text">Puedes ponerte en contacto conmigo en mis redes sociales:</p>

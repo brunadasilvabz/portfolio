@@ -1,14 +1,29 @@
 .skillsSection {
+  background-color: $color-darklilac;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
+  width: 100%;
 
   @media all and (min-width: 768px) {
-    &_div {
-      display: flex;
-      gap: 20px;
+    padding-bottom: 45px;
+  }
+
+  @media all and (min-width: 1024px) {
+    padding: 35px 50px 50px 50px;
+  }
+
+  &_div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    // width: 100%;
+
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+      gap: 30px;
     }
   }
 
@@ -18,41 +33,102 @@
   }
 
   &_soft {
-    width: 80%;
-    padding: 20px;
-    background-color: pink;
+    width: 100%;
+    padding-top: 30px;
+    background-color: $color-lilac;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    border-radius: 15px;
+
+    @media all and (min-width: 1024px) {
+      width: 50%;
+    }
 
     &-title {
-      font-size: 18px;
+      font-size: 20px;
       margin-bottom: 15px;
+
+      @media all and (min-width: 768px) {
+        margin-top: 10px;
+        font-size: 25px;
+      }
+
+      @media all and (min-width: 1024px) {
+        font-size: 30px;
+      }
     }
   }
 
   &_tech {
-    padding: 20px;
-    width: 80%;
+    width: 100%;
+    padding: 30px 20px;
+    background-color: $color-lilac;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    border-radius: 15px;
 
-    background-color: pink;
+    @media all and (min-width: 1024px) {
+      width: 50%;
+    }
 
     &-title {
-      font-size: 18px;
+      font-size: 20px;
       margin-bottom: 15px;
+
+      @media all and (min-width: 768px) {
+        margin-top: 10px;
+        font-size: 25px;
+      }
+
+      @media all and (min-width: 1024px) {
+        font-size: 30px;
+      }
     }
 
     &-list {
+      margin-top: 10px;
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+
+      @media all and (min-width: 768px) {
+        gap: 30px;
+        padding: 10px 20px;
+      }
+
+      @media all and (min-width: 1024px) {
+        gap: 40px;
+        padding: 10px 0 10px 55px;
+      }
     }
   }
 }
 
 .tech-icons {
   height: 50px;
+}
+
+.softSkills_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+
+  &-element {
+    line-height: 1.8;
+
+    @media all and (min-width: 768px) {
+      padding: 0 10px;
+      font-size: 18px;
+      line-height: 2;
+    }
+
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
 }

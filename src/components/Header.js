@@ -15,11 +15,11 @@ const Header = () => {
       {
         showNav?<nav className="nav">
         <ul className="nav_list">
-          <li><a className="nav_list-link" href="#home">inicio</a></li>
-          <li><a className="nav_list-link" href="#aboutMe">sobre mí</a></li>
-          <li><a className="nav_list-link" href="#skills">habilidades</a></li>
-          <li><a className="nav_list-link" href="#projects">proyectos</a></li>
-          <li><a className="nav_list-link" href="#contactMe">contacto</a></li>
+          <li><a className="nav_list-link" href="#home">Inicio</a></li>
+          <li><a className="nav_list-link" href="#aboutMe">Sobre mí</a></li>
+          <li><a className="nav_list-link" href="#skills">Habilidades</a></li>
+          <li><a className="nav_list-link" href="#projects">Proyectos</a></li>
+          <li><a className="nav_list-link" href="#contactMe">Contacto</a></li>
         </ul>
       </nav>:null
       }

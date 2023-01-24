@@ -14,14 +14,14 @@ const Skills = () => {
             <div className="skillsSection_div">
                 <div className="skillsSection_soft">
                     <h3 className="skillsSection_soft-title">Soft skills</h3>
-                    <ul>
-                        <li>Trabajo en remoto
+                    <ul className="softSkills_list">
+                        <li className="softSkills_list-element">Trabajo en remoto
                         </li>
-                        <li>Trabajo en equipo
+                        <li className="softSkills_list-element">Trabajo en equipo
                         </li>
-                        <li>Comunicación efectiva
+                        <li className="softSkills_list-element">Comunicación efectiva
                         </li>
-                        <li>Filosofía Agile y marco de trabajo Scrum
+                        <li className="softSkills_list-element">Filosofía Agile y marco de trabajo Scrum
                         </li>
                     </ul>  
                 </div>

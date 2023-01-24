@@ -1,7 +1,7 @@
 const AboutMe = () => {
     return (
     <section id="aboutMe" className="aboutMeSection">
-        <h2 className="aboutMeSection_title">sobre mí</h2>
+        <h2 className="aboutMeSection_title">Sobre mí</h2>
         <div className="aboutMeSection_div">
             <div className="aboutMeSection_div-div">
                 <img className="div-img" src="https://via.placeholder.com/150/" alt="Bruna"/>
