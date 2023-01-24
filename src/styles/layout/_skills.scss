@@ -30,6 +30,11 @@
   &_title {
     margin-top: 10px;
     font-size: 40px;
+
+    @media all and (min-width: 768px) {
+      font-size: 50px;
+      margin-top: 0;
+    }
   }
 
   &_soft {

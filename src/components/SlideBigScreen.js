@@ -1,9 +1,10 @@
 import {Carousel, Card, Button} from 'react-bootstrap';
 import "../styles/components/slide.scss";
-import gatito1 from '../images/gatito1.jpg';
-import gatito2 from '../images/gatito2.jpg';
-import gatito3 from '../images/gatito3.jpg';
-// import gatito4 from '../images/gatito4.jpg';
+import rickMorty from '../images/rickymorty.jpg';
+import adaCards from '../images/adacards.jpg';
+import alohomora from '../images/alohomora.png';
+import pillow from '../images/pillows.jpg';
+import anonymous from '../images/anonymous.jpg';
 
 
 const SlideBigScreen = () => {
@@ -16,7 +17,7 @@ const SlideBigScreen = () => {
       <Carousel.Item className='carousel_item'>
         <Card className='card' style={{ width: '18rem' }}>
           <div className='card_imgWrapper'>
-            <Card.Img className="img" variant="top" src={gatito1} />
+            <Card.Img className="img" variant="top" src={rickMorty} />
           </div>
           <Card.Body className='card_body'>
             <Card.Title className='card_body-title'>Card Title</Card.Title>
@@ -33,7 +34,7 @@ const SlideBigScreen = () => {
         </Card>
         <Card className='card' style={{ width: '18rem' }}>
           <div className='card_imgWrapper'>
-            <Card.Img className="img" variant="top" src={gatito1} />
+            <Card.Img className="img" variant="top" src="https://via.placeholder.com/100/" />
           </div>
           <Card.Body className='card_body'>
             <Card.Title className='card_body-title'>Card Title</Card.Title>
@@ -50,7 +51,7 @@ const SlideBigScreen = () => {
         </Card>
         <Card className='card' style={{ width: '18rem' }}>
           <div className='card_imgWrapper'>
-            <Card.Img className="img" variant="top" src={gatito1} />
+            <Card.Img className="img" variant="top" src={anonymous} />
           </div>
           <Card.Body className='card_body'>
             <Card.Title className='card_body-title'>Card Title</Card.Title>
@@ -72,7 +73,7 @@ const SlideBigScreen = () => {
       <Carousel.Item className='carousel_item'>
       <Card className='card' style={{ width: '18rem' }}>
           <div className='card_imgWrapper'>
-            <Card.Img className="img" variant="top" src={gatito2} />
+            <Card.Img className="img" variant="top" src={alohomora} />
           </div>
           <Card.Body className='card_body'>
             <Card.Title className='card_body-title'>Card Title</Card.Title>
@@ -89,7 +90,7 @@ const SlideBigScreen = () => {
         </Card>
         <Card className='card' style={{ width: '18rem' }}>
           <div className='card_imgWrapper'>
-            <Card.Img className="img" variant="top" src={gatito2} />
+            <Card.Img className="img" variant="top" src={adaCards} />
           </div>
           <Card.Body className='card_body'>
             <Card.Title className='card_body-title'>Card Title</Card.Title>
@@ -106,7 +107,7 @@ const SlideBigScreen = () => {
         </Card>
         <Card className='card' style={{ width: '18rem' }}>
           <div className='card_imgWrapper'>
-            <Card.Img className="img" variant="top" src={gatito2} />
+            <Card.Img className="img" variant="top" src={pillow} />
           </div>
           <Card.Body className='card_body'>
             <Card.Title className='card_body-title'>Card Title</Card.Title>
@@ -125,7 +126,7 @@ const SlideBigScreen = () => {
 
         {/* 3ND SLIDE */}
 
-      <Carousel.Item className='carousel_item'>
+      {/* <Carousel.Item className='carousel_item'>
       <Card className='card' style={{ width: '18rem' }}>
           <div className='card_imgWrapper'>
             <Card.Img className="img" variant="top" src={gatito3} />
@@ -177,7 +178,7 @@ const SlideBigScreen = () => {
             </div>
           </Card.Body>
         </Card>
-      </Carousel.Item>
+      </Carousel.Item> */}
     </Carousel>
   );
 }

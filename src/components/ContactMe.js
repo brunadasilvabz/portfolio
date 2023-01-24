@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 const ContactMe = () => {
     return (
@@ -7,11 +8,11 @@ const ContactMe = () => {
           <div className="contactSection_div">
             <p className="contactSection_div-text">Puedes ponerte en contacto conmigo en mis redes sociales:</p>
             <div className="contactSection_div-elements">
-              <div className="link_element"><a className="link_element-link" href="">Linkedin</a></div>
-              <div className="link_element"><a className="link_element-link" href="">Twitter</a></div>
+              <div className="link_element"><a className="link_element-link" href=" https://www.linkedin.com/in/brunadasilvabarrozo/" target="_blank">Linkedin</a></div>
+              <div className="link_element"><a className="link_element-link" href="https://twitter.com/brunadasilvabz" target="_blank" >Twitter</a></div>
             </div>
           </div>
-          {/* <div className="contactSection_formDiv">
+          <div className="contactSection_formDiv">
             <p className="contactSection_formDiv-text">También puedes escribirme directamente un mensaje aquí:</p>
               <form className="form" action="">
                 <div className="form_section">
@@ -30,7 +31,7 @@ const ContactMe = () => {
                   <input className="form_section-btn" type="submit" id="submit" value="enviar"></input>
                 </div>
               </form>
-          </div> */}
+          </div>
         </section>
     );
 }
