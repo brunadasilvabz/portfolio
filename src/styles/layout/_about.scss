@@ -18,6 +18,7 @@
 
     @media all and (min-width: 768px) {
       font-size: 50px;
+      margin-top: 0;
     }
   }
 
@@ -26,23 +27,42 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
+    text-align: center;
 
     @media all and (min-width: 768px) {
       flex-direction: row;
       gap: 40px;
+      text-align: start;
     }
 
-    &-img {
-      height: 250px;
-
+    &-div {
       @media all and (min-width: 768px) {
-        height: 300px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
       }
-    }
-
-    &-text {
-      font-size: 20px;
     }
   }
 }
+
+@media all and (max-width: 767px) {
+  .hidden-div {
+    display: none;
+  }
+}
+
+.div-img {
+  height: 250px;
+
+  @media all and (min-width: 768px) {
+    // height: 300px;
+  }
+}
+
+// .div-text {
+//   @media all and (max-width: 1024px) {
+//     align-items: center;
+//   }
+// }
