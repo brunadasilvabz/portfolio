@@ -1,23 +1,31 @@
 .landingSection {
   background-color: $color-darklilac;
-  height: 110vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 35px;
+  justify-content: flex-end;
+  gap: 15px;
 
   @media all and (min-width: 768px) {
-    gap: 40px;
+    gap: 20px;
   }
 
+  // @media all and (min-width: 1024px) {
+  //   gap: 30px;
+  // }
+
   &_title {
-    margin-top: 70px;
-    font-size: 40px;
+    // margin-top: 70px;
+    font-size: 45px;
     font-family: $font-secondary;
 
     @media all and (min-width: 768px) {
-      font-size: 65px;
+      font-size: 80px;
+    }
+
+    @media all and (min-width: 1024px) {
+      font-size: 100px;
     }
   }
 
@@ -26,7 +34,11 @@
     // font-family: $font-secondary;
 
     @media all and (min-width: 768px) {
-      font-size: 30px;
+      font-size: 25px;
+    }
+
+    @media all and (min-width: 1024px) {
+      font-size: 35px;
     }
   }
 
@@ -34,24 +46,68 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    //     width: 100%;
+    padding-left: 0;
+    gap: 10px;
 
     @media all and (min-width: 768px) {
       flex-direction: row;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 40px;
     }
 
-    &-element {
-      text-decoration: none;
-      font-size: 20px;
-      line-height: 2;
-      display: flex;
+    @media all and (min-width: 1024px) {
       gap: 20px;
+    }
 
-      @media all and (min-width: 768px) {
-        font-size: 25px;
+    &-element {
+      background-color: $color-lilac;
+      height: 40px;
+      width: 165px;
+      text-align: center;
+      border-radius: 15px;
+
+      @media all and (min-width: 1024px) {
+        height: 100px;
+        width: 180px;
+        padding: 23px;
       }
+    }
+  }
+
+  //esto no debería estar aquí
+  .link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    line-height: 2;
+    padding: 10px 25px 10px 25px;
+
+    @media all and (min-width: 768px) {
+      // font-size: 25px;
+      font-weight: 500;
+      padding: 10px 25px 10px 25px;
+    }
+
+    @media all and (min-width: 1024px) {
+      margin-top: 20px;
+      font-size: 25px;
+      padding-top: 20px;
+      text-align: center;
+      padding: 30px 27px 30px 27px;
+    }
+  }
+
+  @media all and (min-width: 1024px) {
+    .instagram {
+      padding: 0;
+      padding: 30px 20px 30px 10px;
+    }
+    .cv {
+      padding: 0;
+      line-height: 1.2;
+      padding: 20px 15px 20px 0;
     }
   }
 
@@ -60,31 +116,39 @@
     font-size: 20px;
 
     @media all and (min-width: 768px) {
+      font-size: 25px;
+    }
+
+    @media all and (min-width: 1024px) {
       font-size: 30px;
     }
   }
 
   &_div {
-    background-color: pink;
+    background-color: $color-lilac;
     height: 40px;
     width: 40px;
     text-align: center;
     border-radius: 20px;
+    margin-bottom: 30px;
+    display: flex;
 
     @media all and (min-width: 768px) {
-      margin-top: 25px;
       height: 50px;
       width: 50px;
       border-radius: 30px;
     }
 
     &-arrow {
+      font-size: 25px;
       text-align: center;
-      margin-top: 10px;
+      margin-left: 11px;
+      align-self: center;
 
       @media all and (min-width: 768px) {
-        margin-top: 12px;
-        font-size: 25px;
+        margin-top: 5px;
+        margin-left: 13px;
+        font-size: 30px;
         border-radius: 30px;
       }
     }

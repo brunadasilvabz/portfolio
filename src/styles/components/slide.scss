@@ -7,8 +7,28 @@
   }
 }
 
+.carousel-control-prev {
+  margin-left: 10px;
+}
+
+.carousel-control-next {
+  margin-right: 0;
+}
+// .carousel-control-next {
+//   margin-right: 0;
+// }
+
+.carousel-control-prev-icon {
+  margin-left: -20px;
+}
+
+.carousel-control-next-icon {
+  margin-right: 0;
+}
+
 .card {
   margin: 20px 40px;
+  width: 240px;
 
   &_imgWrapper {
     height: 50%;

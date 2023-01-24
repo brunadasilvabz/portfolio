@@ -11,7 +11,7 @@ const Header = () => {
   // }
   return (
     <header className="header">
-      <button className="header_button" onClick={() =>setShowNav(!showNav)}><i className="fa-solid fa-bars"></i></button>
+      <button className="header_button" onClick={() =>setShowNav(!showNav)}><i class="fa-solid fa-seedling"></i></button>
       {
         showNav?<nav className="nav">
         <ul className="nav_list">

@@ -30,11 +30,16 @@
     }
   }
 
-  // .formDiv {
-  //   &-text {
-  //     color: pink;
-  //   }
-  // } NO FUNCIONA
+  &_formDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    // &-text {
+
+    // }
+  }
 }
 
 .link_element {
@@ -47,5 +52,28 @@
 
   &-link {
     text-decoration: none;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  &_section {
+    &-legend {
+      width: 280px;
+      text-align: start;
+      margin-top: 20px;
+    }
+
+    &-input {
+      width: 280px;
+    }
+
+    &-btn {
+      margin-top: 20px;
+    }
   }
 }

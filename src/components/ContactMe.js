@@ -11,17 +11,26 @@ const ContactMe = () => {
               <div className="link_element"><a className="link_element-link" href="">Twitter</a></div>
             </div>
           </div>
-          <div className="contactSection_formDiv">
+          {/* <div className="contactSection_formDiv">
             <p className="contactSection_formDiv-text">También puedes escribirme directamente un mensaje aquí:</p>
-              <form className="contactSection_formDiv-form" action="">
-                <legend className="form-legend">Nombre completo
-                <input className="form-input" type="text"/></legend>
-                <legend className="form-legend">Email
-                <input className="form-input" type="text"/></legend>
-                <legend className="form-legend">Mensaje
-                <input className="form-input" type="text"/></legend>
+              <form className="form" action="">
+                <div className="form_section">
+                  <legend className="form_section-legend" for="fullname">Nombre completo</legend>
+                  <input className="form_section-input" type="text" id="fullname" placeholder="Nombre..." required/>
+                </div>
+                <div className="form_section">
+                  <legend className="form_section-legend" for="email">Email</legend>
+                  <input className="form_section-input" type="text" id="email" placeholder="nombre.apellido@gmail.com" required/>
+                </div>
+                <div className="form_section">
+                  <legend className="form_section-legend" for="message">Mensaje</legend>
+                  <textarea className="form_section-input" type="text" id="message" placeholder="¿Qué necesitas?" required/>
+                </div>
+                <div className="form_section">
+                  <input className="form_section-btn" type="submit" id="submit" value="enviar"></input>
+                </div>
               </form>
-          </div>
+          </div> */}
         </section>
     );
 }
