@@ -17,6 +17,11 @@ $defaultFontSize: 16;
   @return ($pixels/$defaultFontSize * 1rem);
 }
 
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+
 //Mixins
 @mixin t($fontSize, $fontHeight) {
   font-size: $fontSize;

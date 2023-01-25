@@ -1,11 +1,12 @@
 .landingSection {
   background-color: $color-darklilac;
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   gap: 15px;
+  padding-top: toRem(100);
 
   @media all and (min-width: 768px) {
     gap: 20px;
@@ -17,28 +18,28 @@
 
   &_title {
     // margin-top: 70px;
-    font-size: 45px;
+    font-size: toRem(45);
     font-family: $font-secondary;
 
     @media all and (min-width: 768px) {
-      font-size: 80px;
+      font-size: toRem(80);
     }
 
     @media all and (min-width: 1024px) {
-      font-size: 100px;
+      font-size: toRem(100);
     }
   }
 
   &_desc {
-    font-size: 20px;
+    font-size: toRem(20);
     // font-family: $font-secondary;
 
     @media all and (min-width: 768px) {
-      font-size: 25px;
+      font-size: toRem(25);
     }
 
     @media all and (min-width: 1024px) {
-      font-size: 35px;
+      font-size: toRem(35);
     }
   }
 
@@ -71,7 +72,7 @@
       @media all and (min-width: 1024px) {
         height: 100px;
         width: 180px;
-        padding: 23px;
+        padding: toRem(23);
       }
     }
   }
@@ -82,45 +83,45 @@
     color: black;
     font-size: 20px;
     line-height: 2;
-    padding: 10px 25px 10px 25px;
+    padding: toRem(10) toRem(25);
 
     @media all and (min-width: 768px) {
       // font-size: 25px;
       font-weight: 500;
-      padding: 10px 25px 10px 25px;
+      // padding: 10px 25px 10px 25px;
     }
 
     @media all and (min-width: 1024px) {
-      margin-top: 20px;
+      margin-top: toRem(20);
       font-size: 25px;
       padding-top: 20px;
       text-align: center;
-      padding: 30px 27px 30px 27px;
+      padding: toRem(30) toRem(27);
     }
   }
 
   @media all and (min-width: 1024px) {
     .instagram {
-      padding: 0;
-      padding: 30px 20px 30px 10px;
+      padding: toRem(0);
+      padding: toRem(30) toRem(20);
     }
     .cv {
-      padding: 0;
+      padding: toRem(0);
       line-height: 1.2;
-      padding: 20px 15px 20px 0;
+      padding: toRem(20) toRem(15) toRem(20) toRem(0);
     }
   }
 
   &_text {
     font-family: $font-secondary;
-    font-size: 20px;
+    font-size: toRem(20);
 
     @media all and (min-width: 768px) {
-      font-size: 25px;
+      font-size: toRem(25);
     }
 
     @media all and (min-width: 1024px) {
-      font-size: 30px;
+      font-size: toRem(30);
     }
   }
 
@@ -140,15 +141,15 @@
     }
 
     &-arrow {
-      font-size: 25px;
+      font-size: toRem(25);
       text-align: center;
-      margin-left: 11px;
+      margin-left: toRem(11);
       align-self: center;
 
       @media all and (min-width: 768px) {
-        margin-top: 5px;
-        margin-left: 13px;
-        font-size: 30px;
+        margin-top: toRem(5);
+        margin-left: toRem(13);
+        font-size: toRem(30);
         border-radius: 30px;
       }
     }

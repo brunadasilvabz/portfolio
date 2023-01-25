@@ -1,7 +1,7 @@
 .projectSection {
   background-color: $color-darkgreen;
-  height: 120vh;
-  padding: 20px;
+  // height: 120vh;
+  padding: toRem(20);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,11 +12,11 @@
   // }
 
   &_title {
-    margin-top: 10px;
-    font-size: 40px;
+    margin-top: toRem(10);
+    font-size: toRem(40);
 
     @media all and (min-width: 768px) {
-      font-size: 50px;
+      font-size: toRem(50);
     }
   }
 
@@ -25,14 +25,14 @@
   // }
 
   &_div1 {
-    background-color: $color-lilac;
-    padding: 25px;
-    border-radius: 20px;
+    background-color: $color-darkgreen;
+    padding: toRem(25);
+    // border-radius: 20px;
   }
 
   &_div2 {
-    background-color: $color-lilac;
-    padding-top: 25px;
-    border-radius: 20px;
+    background-color: $color-darkgreen;
+    padding-top: toRem(25);
+    // border-radius: 20px;
   }
 }

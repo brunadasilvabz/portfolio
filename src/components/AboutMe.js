@@ -15,8 +15,6 @@ const AboutMe = () => {
             Rerum placeat assumenda laudantium, excepturi minus accusamus culpa blanditiis dolorum quaerat inventore
             veritatis quibusdam amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi excepturi, porro
             omnis beatae cupiditate expedita doloribus nobis labore, harum odit minus iusto ex quas. Sint enim officia
-            maxime impedit laudantium. Eligendi excepturi, porro
-            omnis beatae cupiditate expedita doloribus nobis labore, harum odit minus iusto ex quas. Sint enim officia
             maxime impedit laudantium.
             </p>
         </div>

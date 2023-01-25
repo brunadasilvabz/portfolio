@@ -32,7 +32,7 @@ const SlideSmallerScreen = () => {
             <Carousel.Item  className='carousel_item'>
             <Card className='card'>
                 <div className='card_imgWrapper'>
-                    <Card.Img className="img" variant="top" src="https://via.placeholder.com/130/" />
+                    <Card.Img className="img" variant="top" src="#" />
                 </div>
                 <Card.Body className='card_body'>
                     <Card.Title className='card_body-title'>Card Title</Card.Title>

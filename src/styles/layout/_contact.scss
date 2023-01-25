@@ -1,6 +1,6 @@
 .contactSection {
   // height: 50vh;
-  padding: 20px;
+  padding: toRem(20);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,11 +8,11 @@
   background-color: $color-darklilac;
 
   &_title {
-    margin-top: 10px;
-    font-size: 40px;
+    margin-top: toRem(10);
+    font-size: toRem(40);
 
     @media all and (min-width: 768px) {
-      font-size: 50px;
+      font-size: toRem(50);
     }
   }
 
@@ -23,12 +23,12 @@
     gap: 10px;
 
     &-text {
-      padding-left: 5px;
-      font-size: 18px;
+      padding-left: toRem(5);
+      font-size: toRem(18);
       // text-align: center;
 
       @media all and (min-width: 768px) {
-        font-size: 20px;
+        font-size: toRem(20);
       }
     }
 
@@ -57,12 +57,12 @@
 }
 
 .link_element {
-  margin: 20px 0 20px 0;
+  margin: toRem(20) toRem(0) toRem(20) toRem(0);
   background-color: #dbbfde6e;
   height: 60px;
   width: 120px;
   text-align: center;
-  padding-top: 15px;
+  padding-top: toRem(15);
   border-radius: 20px;
 
   @media all and (min-width: 768px) {
@@ -74,13 +74,13 @@
   }
 
   &-link {
-    font-size: 18px;
+    font-size: toRem(18);
     text-decoration: none;
     color: black;
     // margin-top: 50px;
 
     @media all and (min-width: 768px) {
-      font-size: 20px;
+      font-size: toRem(20);
     }
   }
 }
@@ -95,7 +95,7 @@
     &-legend {
       width: 280px;
       text-align: start;
-      margin-top: 20px;
+      margin-top: toRem(20);
     }
 
     &-input {
@@ -103,7 +103,7 @@
     }
 
     &-btn {
-      margin-top: 20px;
+      margin-top: toRem(20);
     }
   }
 }

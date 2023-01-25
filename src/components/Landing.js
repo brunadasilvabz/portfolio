@@ -3,7 +3,7 @@ const Landing = () => {
     return (
         <section id="home" className="landingSection">
           <h1 className="landingSection_title">Hola, soy Bruna</h1>
-          <p className="landingSection_desc">Desarrolladora front-end</p>
+          <p className="landingSection_desc">Desarrolladora Front-end Junior</p>
           <ul className="landingSection_list">
             <li className="landingSection_list-element"><a className="link" href="https://github.com/brunadasilvabz" target="_blank" rel="noreferrer">github</a>
             </li>

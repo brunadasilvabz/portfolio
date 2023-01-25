@@ -1,15 +1,19 @@
+@import "../core/variables";
+
 .carousel {
   // background-color: red;
-  height: rem(600);
+  height: toRem(580);
 
   @media all and (min-width: 768px) {
-    width: 100vh;
-    height: rem(625);
+    // width: 100vh;
+    width: toRem(700);
+    height: toRem(625);
   }
 
   @media all and (min-width: 1024px) {
-    height: rem(580);
-    width: 60rem;
+    height: toRem(580);
+    // width: toRem(100);
+    width: 100%;
   }
 
   &_item {
@@ -35,28 +39,29 @@
 }
 
 .card {
-  margin: 10px 40px;
-  width: 240px;
-  border-radius: 20px;
+  margin: toRem(10) toRem(40);
+  width: toRem(240);
+  // border-radius: 20px;
+  background-color: $color-darklilac;
 
   @media all and (min-width: 768px) {
     // background-color: red;
-    margin: 20px 15px;
+    margin: toRem(20) toRem(15);
     width: calc(100% / 3);
-    border-radius: 20px;
+    // border-radius: 20px;
     // border-color: black;
   }
 
   @media all and (min-width: 1024px) {
     // background-color: red;
-    margin: 20px 15px;
+    // margin: toRem(20) 15px;
     width: calc(100% / 3);
   }
 
   &_imgWrapper {
     height: 50%;
-    padding: 20px 5px 10px 5px;
-    background-color: pink;
+    padding: toRem(20) toRem(5) toRem(10) toRem(5);
+    background-color: $color-lilac;
     // display: flex;
     // align-items: center;
     // justify-content: center;
@@ -79,7 +84,7 @@
   }
 
   &_body {
-    background-color: pink;
+    background-color: $color-lilac;
 
     // &-title {
 
@@ -122,19 +127,19 @@
 
 //EXTRAS
 .carousel-control-prev {
-  margin-left: 10px;
+  margin-left: toRem(10);
 }
 
 .carousel-control-next {
-  margin-right: 0;
+  margin-right: toRem(0);
 }
 
 .carousel-control-prev-icon {
-  margin-left: -20px;
+  margin-left: toRem(-20);
 }
 
 .carousel-control-next-icon {
-  margin-right: 0;
+  margin-right: toRem(0);
 }
 
 @media all and (min-width: 768px) {
@@ -154,11 +159,11 @@
   }
 
   .carousel-control-prev-icon {
-    margin-left: -55px;
+    margin-left: toRem(-55);
   }
 
   .carousel-control-next-icon {
-    margin-right: -50px;
+    margin-right: toRem(-50);
     // width: 30px;
   }
 }
@@ -180,11 +185,11 @@
   }
 
   .carousel-control-prev-icon {
-    margin-left: -60px;
+    margin-left: toRem(-60);
   }
 
   .carousel-control-next-icon {
-    margin-right: -45px;
+    margin-right: toRem(-45);
   }
 
   // .carousel-indicators {
