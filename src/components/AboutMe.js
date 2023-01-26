@@ -7,15 +7,11 @@ const AboutMe = () => {
                 <img className="div-img" src="https://via.placeholder.com/150/" alt="Bruna"/>
                 <p className="div-text hidden-div">Tempora eaque, doloremque voluptate quae molestiae quas natus qui nihil modi.</p>
             </div>
-            <p className="aboutMeSection_div-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic totam eligendi
-            atque,
-            veniam culpa magnam
-                accusantium quisquam deleniti. Tempora eaque, doloremque voluptate quae molestiae quas natus qui nihil modi.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ratione eaque perspiciatis nam nesciunt nulla!
-            Rerum placeat assumenda laudantium, excepturi minus accusamus culpa blanditiis dolorum quaerat inventore
-            veritatis quibusdam amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi excepturi, porro
-            omnis beatae cupiditate expedita doloribus nobis labore, harum odit minus iusto ex quas. Sint enim officia
-            maxime impedit laudantium.
+            <p className="aboutMeSection_div-text">Ahora que he terminado el bootcamp de desarrollo web de Adalab, busco mi primer puesto como desarrolladora front-end junior.
+
+Con los mismos nervios y ganas con los que empecé el bootcamp, quiero empezar también ahora a explorar esta área por la que siento una ilusión y un respeto enormes.
+
+Me considero una persona asertiva, organizada y responsable, y me hace mucha ilusión poder seguir aprendiendo y creciendo como desarrolladora web.
             </p>
         </div>
   </section>

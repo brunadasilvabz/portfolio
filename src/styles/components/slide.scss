@@ -42,7 +42,7 @@
   margin: toRem(10) toRem(40);
   width: toRem(240);
   // border-radius: 20px;
-  background-color: $color-darklilac;
+  background-color: $secondary-color;
 
   @media all and (min-width: 768px) {
     // background-color: red;
@@ -61,7 +61,7 @@
   &_imgWrapper {
     height: 50%;
     padding: toRem(20) toRem(5) toRem(10) toRem(5);
-    background-color: $color-lilac;
+    background-color: $secondary-color;
     // display: flex;
     // align-items: center;
     // justify-content: center;
@@ -84,7 +84,7 @@
   }
 
   &_body {
-    background-color: $color-lilac;
+    background-color: $secondary-color;
 
     // &-title {
 
@@ -114,8 +114,10 @@
 }
 
 .button {
-  background-color: green;
+  background-color: $statement-color;
+  border-color: $statement-color;
   height: 45px;
+  color: $primary-font-color;
 
   @media all and (min-width: 1024px) {
     display: flex;

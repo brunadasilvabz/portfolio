@@ -8,11 +8,11 @@
   }
 
   &_button {
-    background-color: $color-lilac;
+    background-color: $primary-color;
     height: 40px;
     width: 40px;
     border-radius: 15px;
-    border-color: black;
+    border-color: $primary-font-color;
 
     @media all and (min-width: 768px) {
       height: 50px;
@@ -27,6 +27,10 @@
       font-size: toRem(30);
     }
   }
+}
+
+.fa-seedling {
+  color: $statement-color;
 }
 
 .nav {

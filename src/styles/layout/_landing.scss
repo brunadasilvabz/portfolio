@@ -1,5 +1,5 @@
 .landingSection {
-  background-color: $color-darklilac;
+  background-color: $secondary-color;
   // height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,6 +20,7 @@
     // margin-top: 70px;
     font-size: toRem(45);
     font-family: $font-secondary;
+    color: $color-darklilac;
 
     @media all and (min-width: 768px) {
       font-size: toRem(80);
@@ -32,6 +33,7 @@
 
   &_desc {
     font-size: toRem(20);
+    color: $primary-font-color;
     // font-family: $font-secondary;
 
     @media all and (min-width: 768px) {
@@ -80,7 +82,7 @@
   //esto no debería estar aquí
   .link {
     text-decoration: none;
-    color: black;
+    color: $primary-font-color;
     font-size: 20px;
     line-height: 2;
     padding: toRem(10) toRem(25);
@@ -114,6 +116,7 @@
 
   &_text {
     font-family: $font-secondary;
+    color: $primary-font-color;
     font-size: toRem(20);
 
     @media all and (min-width: 768px) {

@@ -1,5 +1,5 @@
 .footer {
-  background-color: $color-darkblue;
+  background-color: $primary-color;
   padding: toRem(30) toRem(20);
   display: flex;
   justify-content: space-between;
@@ -9,6 +9,7 @@
   &_text {
     font-size: toRem(14);
     font-style: italic;
+    color: $primary-font-color;
   }
 
   &_list {

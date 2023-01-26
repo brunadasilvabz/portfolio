@@ -1,5 +1,5 @@
 .projectSection {
-  background-color: $color-darkgreen;
+  background-color: $primary-color;
   // height: 120vh;
   padding: toRem(20);
   display: flex;
@@ -14,6 +14,7 @@
   &_title {
     margin-top: toRem(10);
     font-size: toRem(40);
+    color: $secondary-color;
 
     @media all and (min-width: 768px) {
       font-size: toRem(50);
@@ -25,13 +26,13 @@
   // }
 
   &_div1 {
-    background-color: $color-darkgreen;
+    background-color: $primary-color;
     padding: toRem(25);
     // border-radius: 20px;
   }
 
   &_div2 {
-    background-color: $color-darkgreen;
+    background-color: $primary-color;
     padding-top: toRem(25);
     // border-radius: 20px;
   }
