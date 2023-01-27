@@ -1,4 +1,9 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+
+import cvBruna from "../archives/cvbruna.pdf"
+
+
 const Landing = () => {
     return (
         <section id="home" className="landingSection">
@@ -12,7 +17,7 @@ const Landing = () => {
             <li className="landingSection_list-element"><a className="link" href="https://twitter.com/brunadasilvabz" target="_blank" rel="noreferrer">twitter</a>
             </li>
             <li className="landingSection_list-element"><a className="link instagram" href="" target="_blank">instagram</a></li>
-            <li className="landingSection_list-element"><a className="link cv" href="./assets/archives/cvbruna.pdf" download
+            <li className="landingSection_list-element"><a className="link cv" href={cvBruna} download="CV Bruna Da Silva"
             target="_blank">descargar cv</a>
             </li>
           </ul>
