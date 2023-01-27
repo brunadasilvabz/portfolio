@@ -1,6 +1,24 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-const ContactMe = () => {
+
+
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+const ContactMe = (props) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault(); // prevents the page from reloading when you hit “Send”
+  
+    emailjs.sendForm('service_4v2lsuk', 'template_ohb45d3', form.current, 'BoxfTjcN5vOMKAcv2')
+      .then((result) => {
+          props.setStatusMessage("¡Email enviado correctamente!")
+      }, (error) => {
+        props.setStatusMessage("Por favor vuelve a intentarlo.")
+      });
+  };
+
     return (
         <section id="contactMe" className="contactSection">
           <h2 className="contactSection_title">Contacto</h2>
@@ -14,22 +32,25 @@ const ContactMe = () => {
           </div>
           <div className="contactSection_formDiv">
             <p className="contactSection_formDiv-text">También puedes escribirme directamente un mensaje aquí:</p>
-              <form className="form" action="">
+
+
+              <form ref={form} onSubmit={sendEmail} className="form" action="">
                 <div className="form_section">
                   <legend className="form_section-legend" for="fullname">Nombre completo</legend>
-                  <input className="form_section-input" type="text" id="fullname" placeholder="Nombre..." required/>
+                  <input className="form_section-input" type="text" name="fullname" id="fullname" placeholder="Nombre..." required/>
                 </div>
                 <div className="form_section">
                   <legend className="form_section-legend" for="email">Email</legend>
-                  <input className="form_section-input" type="text" id="email" placeholder="nombre.apellido@gmail.com" required/>
+                  <input className="form_section-input" type="text" name="email_id" id="email_id" placeholder="nombre.apellido@gmail.com" required/>
                 </div>
                 <div className="form_section">
                   <legend className="form_section-legend" for="message">Mensaje</legend>
-                  <textarea className="form_section-input" type="text" id="message" placeholder="¿Qué necesitas?" required/>
+                  <textarea className="form_section-input" type="text" name="message" id="message" placeholder="¿Qué necesitas?" required/>
                 </div>
                 <div className="form_section">
                   <input className="form_section-btn" type="submit" id="submit" value="enviar"></input>
                 </div>
+                <p className='statusText'>{props.statusMessage}</p>
               </form>
           </div>
         </section>

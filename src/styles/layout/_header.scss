@@ -12,7 +12,7 @@
       border-color: $primary-font-color;
 
       &-icon {
-        // text-align: center;
+        padding-top: toRem(5);
         font-size: toRem(25);
         color: $statement-color;
       }

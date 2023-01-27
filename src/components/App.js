@@ -15,7 +15,8 @@ import Footer from "./Footer";
 
 function App() {
 
-const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(true);
+  const [statusMessage, setStatusMessage] = useState("");
 
   return (
     <div className="App">
@@ -25,7 +26,7 @@ const [toggle, setToggle] = useState(true);
         <AboutMe></AboutMe>
         <Skills></Skills>
         <Projects></Projects>
-        <ContactMe></ContactMe>
+        <ContactMe statusMessage={statusMessage} setStatusMessage={setStatusMessage} ></ContactMe>
       </main>
       <Footer></Footer>
     </div>

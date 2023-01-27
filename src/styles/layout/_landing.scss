@@ -23,7 +23,7 @@
   // }
 
   &_title {
-    // margin-top: 70px;
+    // margin-top: toRem(20);
     font-size: toRem(45);
     font-family: $font-secondary;
     color: $color-darklilac;
@@ -42,6 +42,8 @@
   &_desc {
     font-size: toRem(18);
     color: $primary-font-color;
+    // margin-top: toRem(20);
+    margin-bottom: toRem(30);
     // font-family: $font-secondary;
 
     @media all and (min-width: 768px) {
@@ -60,6 +62,7 @@
     //     width: 100%;
     padding-left: 0;
     gap: 10px;
+    margin-bottom: toRem(30);
 
     @media all and (min-width: 768px) {
       flex-direction: row;
@@ -113,12 +116,12 @@
   @media all and (min-width: 1024px) {
     .instagram {
       padding: toRem(0);
-      padding: toRem(30) toRem(20);
+      padding: toRem(30) toRem(10);
     }
     .cv {
       padding: toRem(0);
       line-height: 1.2;
-      padding: toRem(20) toRem(15) toRem(20) toRem(0);
+      // padding: toRem(20) toRem(15) toRem(20) toRem(5);
     }
   }
 
@@ -154,12 +157,12 @@
     &-arrow {
       font-size: toRem(25);
       text-align: center;
-      margin-left: toRem(11);
+      margin-left: toRem(10.5);
       align-self: center;
       color: $statement-color;
 
       @media all and (min-width: 768px) {
-        margin-top: toRem(5);
+        margin-top: toRem(2);
         margin-left: toRem(13);
         font-size: toRem(30);
         border-radius: 30px;

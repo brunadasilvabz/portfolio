@@ -22,7 +22,11 @@
 
     @media all and (min-width: 768px) {
       font-size: toRem(50);
-      margin-top: toRem(0);
+      margin-top: toRem(15);
+    }
+
+    @media all and (min-width: 1024px) {
+      margin-top: toRem(25);
     }
   }
 

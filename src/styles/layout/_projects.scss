@@ -12,12 +12,17 @@
   // }
 
   &_title {
-    margin-top: toRem(10);
+    margin-top: toRem(25);
     font-size: toRem(40);
     color: $secondary-color;
 
     @media all and (min-width: 768px) {
       font-size: toRem(50);
+      margin-top: toRem(35);
+    }
+
+    @media all and (min-width: 1024px) {
+      margin-top: toRem(50);
     }
   }
 

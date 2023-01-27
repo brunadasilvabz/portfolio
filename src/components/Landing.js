@@ -12,7 +12,7 @@ const Landing = () => {
             <li className="landingSection_list-element"><a className="link" href="https://twitter.com/brunadasilvabz" target="_blank" rel="noreferrer">twitter</a>
             </li>
             <li className="landingSection_list-element"><a className="link instagram" href="" target="_blank">instagram</a></li>
-            <li className="landingSection_list-element"><a className="link cv" href="./assets/archive/cv_bruna.pdf" download
+            <li className="landingSection_list-element"><a className="link cv" href="./assets/archives/cvbruna.pdf" download
             target="_blank">descargar cv</a>
             </li>
           </ul>
