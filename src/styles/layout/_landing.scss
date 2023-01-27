@@ -6,10 +6,16 @@
   align-items: center;
   justify-content: flex-end;
   gap: 15px;
-  padding-top: toRem(100);
+  padding: toRem(100) toRem(20) toRem(0) toRem(20);
 
   @media all and (min-width: 768px) {
     gap: 20px;
+    padding: toRem(10) toRem(20) toRem(0) toRem(20);
+  }
+
+  @media all and (min-width: 1024px) {
+    gap: 20px;
+    padding: toRem(70) toRem(30) toRem(0) toRem(30);
   }
 
   // @media all and (min-width: 1024px) {
@@ -24,15 +30,17 @@
 
     @media all and (min-width: 768px) {
       font-size: toRem(80);
+      margin-top: toRem(70);
     }
 
     @media all and (min-width: 1024px) {
       font-size: toRem(100);
+      margin-top: toRem(0);
     }
   }
 
   &_desc {
-    font-size: toRem(20);
+    font-size: toRem(18);
     color: $primary-font-color;
     // font-family: $font-secondary;
 
@@ -129,12 +137,12 @@
   }
 
   &_div {
-    background-color: $color-lilac;
+    background-color: $primary-color;
     height: 40px;
     width: 40px;
     text-align: center;
     border-radius: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     display: flex;
 
     @media all and (min-width: 768px) {
@@ -148,6 +156,7 @@
       text-align: center;
       margin-left: toRem(11);
       align-self: center;
+      color: $statement-color;
 
       @media all and (min-width: 768px) {
         margin-top: toRem(5);

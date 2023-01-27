@@ -1,71 +1,121 @@
-.header {
-  position: fixed;
-  z-index: 2;
-  padding: toRem(15) 0 0 toRem(10);
+@media all and (min-width: 0px) and (max-width: 768px) {
+  .header {
+    position: fixed;
+    z-index: 2;
+    padding: toRem(15) 0 0 toRem(10);
 
-  @media all and (min-width: 768px) {
-    padding: toRem(25) 0 0 toRem(20);
-  }
+    &_button {
+      background-color: $primary-color;
+      height: 40px;
+      width: 40px;
+      border-radius: 15px;
+      border-color: $primary-font-color;
 
-  &_button {
-    background-color: $primary-color;
-    height: 40px;
-    width: 40px;
-    border-radius: 15px;
-    border-color: $primary-font-color;
-
-    @media all and (min-width: 768px) {
-      height: 50px;
-      width: 50px;
-      border-radius: 20px;
-      font-size: toRem(25);
-    }
-
-    @media all and (min-width: 1024px) {
-      height: 55px;
-      width: 55px;
-      font-size: toRem(30);
+      &-icon {
+        // text-align: center;
+        font-size: toRem(25);
+        color: $statement-color;
+      }
     }
   }
-}
 
-.fa-seedling {
-  color: $statement-color;
-}
+  .navElements {
+    margin-top: toRem(10);
 
-.nav {
-  // background-color: rgb(219, 76, 100);
-  // margin-left: 0px;
-  margin-top: toRem(10);
+    &_list {
+      padding-left: toRem(1);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
 
-  &_list {
-    padding-left: toRem(1);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-
-    @media all and (min-width: 768px) {
-      gap: 15px;
-    }
-
-    &-link {
-      text-decoration-line: none;
-      padding: 2px;
-      color: black;
-      background-color: #dbbfdeaf;
-      padding: toRem(5) toRem(10);
-      border-radius: 10px;
-
-      @media all and (min-width: 1024px) {
-        font-size: toRem(18);
+      &-link {
+        text-decoration-line: none;
+        padding: 10px;
+        color: black;
+        background-color: #dbbfdeaf;
+        padding: toRem(5) toRem(10);
+        border-radius: 10px;
       }
     }
   }
 }
-// .footer {
-//   position: fixed;
-//   left: 0;
-//   bottom: 0;
-//   width: 100vw;
-//   padding: 1rem;
-// }
+
+@media all and (min-width: 768px) {
+  .header {
+    width: 100%;
+    padding: toRem(20);
+    position: initial;
+    z-index: initial;
+  }
+
+  .navElements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: toRem(25);
+
+    &_icon {
+      font-size: toRem(30);
+      color: $statement-color;
+      margin-left: toRem(10);
+
+      @media all and (min-width: 1024px) {
+        font-size: toRem(40);
+      }
+    }
+
+    &_list {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      margin-top: toRem(10);
+
+      @media all and (min-width: 1024px) {
+        gap: 30px;
+      }
+
+      &-link {
+        text-decoration: none;
+        color: $primary-font-color;
+        // font-size: rem(18);
+        background-color: $secondary-color;
+
+        @media all and (min-width: 1024px) {
+          font-size: toRem(20);
+        }
+      }
+    }
+  }
+}
+
+//AQUÍ
+
+// // .header {
+// //   background-color: red;
+// //   // width: 100%;
+// //   width: 768px;
+// //   height: 10vh;
+// //   z-index: initial;
+// //   position: initial;
+// // }
+// // .navElements {
+// //   // background-color: pink;
+// //   width: 100vh;
+// //   display: flex;
+// //   justify-content: space-between;
+// //   padding: toRem(20);
+// //   // padding: toRem(25) 0 0 toRem(20) &-icon {
+// //   //   margin-left: 10px;
+// //   // }
+
+// //   &_icon {
+// //     font-size: 30px;
+// //   }
+
+// //   &_list {
+// //     height: 100%;
+// //     background-color: green;
+// //     display: flex;
+// //   }
+// // }
+// // }

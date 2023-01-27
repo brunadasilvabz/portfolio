@@ -9,10 +9,11 @@ import github from "../images/github.svg";
 
 const Skills = () => {
     return(
-        <section id="skills" className="skillsSection">
-            <h2 className="skillsSection_title">Habilidades</h2>
-            <div className="skillsSection_div">
+        <section className="skillsSection">
+            {/* <h2 className="skillsSection_title">Habilidades</h2> */}
+            <div  id="skills" className="skillsSection_div">
                 <div className="skillsSection_soft">
+                    <i class="skillsSection_soft-icon fa-solid fa-user-gear"></i>
                     <h3 className="skillsSection_soft-title">Soft skills</h3>
                     <ul className="softSkills_list">
                         <li className="softSkills_list-element">Trabajo en remoto
@@ -26,17 +27,18 @@ const Skills = () => {
                     </ul>  
                 </div>
                 <div className="skillsSection_tech">
-                <h3 className="skillsSection_tech-title">Habilidades técnicas</h3>
-                    <ul className="skillsSection_tech-list">
-                        <li><img className="tech-icons" src={html5} alt="html"/></li>
-                        <li><img className="tech-icons" src={css3} alt="html"/></li>
-                        <li><img className="tech-icons" src={sass} alt="html"/></li>
-                        <li><img className="tech-icons" src={javascript} alt="html"/></li>
-                        <li><img className="tech-icons" src={react} alt="html"/></li>
-                        <li><img className="tech-icons" src={node} alt="html"/></li>
-                        <li><img className="tech-icons" src={git} alt="html"/></li>
-                        <li><img className="tech-icons" src={github} alt="html"/></li>
-                    </ul>
+                    <i class="skillsSection_tech-icon fa-solid fa-code"></i>
+                    <h3 className="skillsSection_tech-title">Habilidades técnicas</h3>
+                        <ul className="skillsSection_tech-list">
+                            <li><img className="tech-icons" src={html5} alt="html"/></li>
+                            <li><img className="tech-icons" src={css3} alt="html"/></li>
+                            <li><img className="tech-icons" src={sass} alt="html"/></li>
+                            <li><img className="tech-icons" src={javascript} alt="html"/></li>
+                            <li><img className="tech-icons" src={react} alt="html"/></li>
+                            <li><img className="tech-icons" src={node} alt="html"/></li>
+                            <li><img className="tech-icons" src={git} alt="html"/></li>
+                            <li><img className="tech-icons" src={github} alt="html"/></li>
+                        </ul>
                 </div>
             </div>
         </section>

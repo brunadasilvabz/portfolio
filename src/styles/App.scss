@@ -25,6 +25,15 @@
   font-family: $font-main;
 }
 
+// .fa-solid {
+//   font-size: toRem(30);
+//   color: $statement-color;
+// }
+
+.fa-brands {
+  color: $primary-font-color;
+}
+
 // :root{
 //     overflow-x: hidden;
 // }
@@ -39,10 +48,6 @@
 // .main {
 //   padding: 25px;
 // }
-
-.fa-brands {
-  color: $primary-font-color;
-}
 
 // @media all and (max-width: 768px) {
 //   .showBigger {

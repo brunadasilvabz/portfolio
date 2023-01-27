@@ -9,51 +9,78 @@
 
   @media all and (min-width: 768px) {
     padding-bottom: toRem(45);
+    height: toRem(300);
   }
 
   @media all and (min-width: 1024px) {
     padding: toRem(35) toRem(50) toRem(50) toRem(50);
+    height: toRem(350);
   }
 
   &_div {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 10px;
+    border: 2px solid $primary-font-color;
+    background-color: $secondary-color;
+    border-radius: 15px;
     // width: 100%;
+    // transform: translateY(-60%);
 
     @media all and (min-width: 768px) {
       flex-direction: row;
-      gap: 30px;
+      gap: 5px;
+      margin: toRem(0) toRem(15);
+      transform: translateY(-45%);
     }
   }
 
-  &_title {
-    margin-top: toRem(10);
-    font-size: toRem(40);
+  // &_title {
+  //   margin-top: toRem(10);
+  //   font-size: toRem(40);
 
-    @media all and (min-width: 768px) {
-      font-size: toRem(50);
-      margin-top: toRem(0);
-    }
-  }
+  //   @media all and (min-width: 768px) {
+  //     font-size: toRem(50);
+  //     margin-top: toRem(0);
+  //   }
+  // }
 
   &_soft {
-    width: 100%;
+    width: 90%;
+    align-self: center;
     padding-top: toRem(30);
-    background-color: $color-lilac;
+    // background-color: red;
+    // border-color: $primary-color;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-radius: 15px;
+    // border-radius: 15px;
+
+    @media all and (min-width: 768px) {
+      padding-top: toRem(20);
+      margin-left: toRem(10);
+    }
 
     @media all and (min-width: 1024px) {
       width: 50%;
     }
 
+    &-icon {
+      font-size: toRem(30);
+      margin: toRem(20);
+      color: $icons-color;
+
+      @media all and (min-width: 768px) {
+        margin-top: toRem(15);
+        margin-bottom: toRem(10);
+      }
+    }
+
     &-title {
-      font-size: toRem(20);
+      font-size: toRem(30);
       margin-bottom: toRem(15);
+      color: $primary-font-color;
 
       @media all and (min-width: 768px) {
         margin-top: toRem(10);
@@ -67,22 +94,49 @@
   }
 
   &_tech {
-    width: 100%;
+    width: 90%;
+    align-self: center;
     padding: toRem(30) toRem(20);
-    background-color: $color-lilac;
+    background-color: $secondary-color;
+    border-top: solid 0.1rem #b8b8b9;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-radius: 15px;
+    // border-radius: 15px;
+    margin: toRem(10);
+
+    @media all and (min-width: 768px) {
+      border-top: none;
+      padding-top: toRem(10);
+      border-left: solid 0.1rem #b8b8b9;
+      margin-top: toRem(10);
+    }
+
+    &-icon {
+      font-size: toRem(30);
+      margin: toRem(10);
+      color: $icons-color;
+
+      @media all and (min-width: 768px) {
+        margin-top: toRem(10);
+        margin-bottom: toRem(10);
+      }
+
+      @media all and (min-width: 1024px) {
+        margin-top: toRem(40);
+        margin-bottom: toRem(10);
+      }
+    }
 
     @media all and (min-width: 1024px) {
       width: 50%;
     }
 
     &-title {
-      font-size: toRem(20);
+      font-size: toRem(30);
       margin-bottom: toRem(15);
+      color: $primary-font-color;
 
       @media all and (min-width: 768px) {
         margin-top: toRem(10);
@@ -95,7 +149,7 @@
     }
 
     &-list {
-      margin-top: toRem(10);
+      margin-top: toRem(15);
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
@@ -103,18 +157,24 @@
       @media all and (min-width: 768px) {
         gap: 30px;
         padding: toRem(10) toRem(20);
+        align-items: center;
+        justify-content: center;
       }
 
       @media all and (min-width: 1024px) {
         gap: 40px;
-        padding: toRem(10) toRem(0) toRem(10) toRem(55);
+        padding: toRem(10) toRem(25) toRem(10) toRem(25);
       }
     }
   }
 }
 
 .tech-icons {
-  height: 50px;
+  height: 45px;
+
+  @media all and (min-width: 768px) {
+    height: 40px;
+  }
 }
 
 .softSkills_list {
@@ -122,6 +182,7 @@
   flex-direction: column;
   align-items: center;
   padding: toRem(10) toRem(0);
+  // margin-left: toRem(10);
 
   &-element {
     line-height: 1.8;
@@ -129,10 +190,10 @@
     @media all and (min-width: 768px) {
       padding: toRem(0) toRem(10);
       font-size: toRem(18);
-      line-height: 2;
+      // line-height: 1.8;
     }
 
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 1024px) {
       font-size: toRem(20);
     }
   }

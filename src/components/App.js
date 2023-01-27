@@ -4,7 +4,7 @@ import { useState } from "react";
 import "../styles/App.scss";
 
 //COMPONENTS
-import Header from "./Header";
+import Headers from "./Headers";
 import Landing from "./Landing";
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
@@ -19,7 +19,7 @@ const [toggle, setToggle] = useState(true);
 
   return (
     <div className="App">
-      <Header toggle={toggle} setToggle={setToggle}></Header>
+      <Headers toggle={toggle} setToggle={setToggle}></Headers>
       <main className="main">
         <Landing></Landing>
         <AboutMe></AboutMe>

@@ -10,6 +10,7 @@
   &_title {
     margin-top: toRem(10);
     font-size: toRem(40);
+    color: $primary-font-color;
 
     @media all and (min-width: 768px) {
       font-size: toRem(50);
@@ -25,6 +26,7 @@
     &-text {
       padding-left: toRem(5);
       font-size: toRem(18);
+      color: $primary-font-color;
       // text-align: center;
 
       @media all and (min-width: 768px) {
@@ -44,26 +46,33 @@
     }
   }
 
-  // &_formDiv {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   justify-content: center;
+  &_formDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: toRem(30);
 
-  //   // &-text {
+    &-text {
+      padding-left: toRem(5);
+      font-size: toRem(18);
+      color: $primary-font-color;
 
-  //   // }
-  // }
+      @media all and (min-width: 768px) {
+        font-size: toRem(20);
+      }
+    }
+  }
 }
 
 .link_element {
   margin: toRem(20) toRem(0) toRem(20) toRem(0);
-  background-color: #dbbfde6e;
+  background-color: $statement-color;
   height: 60px;
-  width: 120px;
+  width: 160px;
   text-align: center;
   padding-top: toRem(15);
-  border-radius: 20px;
+  border-radius: 15px;
 
   @media all and (min-width: 768px) {
     width: 160px;
@@ -76,7 +85,7 @@
   &-link {
     font-size: toRem(18);
     text-decoration: none;
-    color: black;
+    color: $primary-font-color;
     // margin-top: 50px;
 
     @media all and (min-width: 768px) {
@@ -90,20 +99,47 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
+  background-color: $primary-color;
+  border-radius: 20px;
+  padding: toRem(30) toRem(5);
+
+  @media all and (min-width: 768px) {
+    width: 100%;
+    margin-top: toRem(20);
+  }
+
+  @media all and (min-width: 1024px) {
+    width: toRem(900);
+  }
 
   &_section {
+    width: 80%;
+
     &-legend {
-      width: 280px;
+      width: 100%;
       text-align: start;
       margin-top: toRem(20);
+      color: $primary-font-color;
     }
 
     &-input {
-      width: 280px;
+      width: 100%;
+      border-color: $primary-font-color;
+      border-radius: 10px;
+      padding: toRem(5);
+      @media all and (min-width: 768px) {
+        padding: toRem(10);
+      }
     }
 
     &-btn {
-      margin-top: toRem(20);
+      margin: toRem(20);
+      height: 40px;
+      width: 80px;
+      color: $primary-font-color;
+      background-color: $statement-color;
+      border-color: $primary-font-color;
+      border-radius: 15px;
     }
   }
 }
