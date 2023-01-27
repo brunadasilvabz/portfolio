@@ -48,6 +48,8 @@
   width: toRem(240);
   border-radius: 20px;
   background-color: $secondary-color;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
   @media all and (min-width: 768px) {
     // background-color: red;
@@ -205,4 +207,8 @@
   // .carousel-indicators {
   //   padding-top: 30px;
   // }
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 12px 10px 2px;
 }

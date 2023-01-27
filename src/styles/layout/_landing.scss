@@ -26,7 +26,10 @@
     // margin-top: toRem(20);
     font-size: toRem(45);
     font-family: $font-secondary;
-    color: $color-darklilac;
+    color: $primary-font-color;
+    // text-shadow: 4px 6px 4px $icons-color;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2),
+      0px -5px 10px rgba(255, 255, 255, 0.15);
 
     @media all and (min-width: 768px) {
       font-size: toRem(80);
@@ -37,6 +40,10 @@
       font-size: toRem(100);
       margin-top: toRem(0);
     }
+
+    &-span {
+      color: $primary-color;
+    }
   }
 
   &_desc {
@@ -45,6 +52,8 @@
     // margin-top: toRem(20);
     margin-bottom: toRem(30);
     // font-family: $font-secondary;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2),
+      0px -5px 10px rgba(255, 255, 255, 0.15);
 
     @media all and (min-width: 768px) {
       font-size: toRem(25);
@@ -97,6 +106,8 @@
     font-size: 20px;
     line-height: 2;
     padding: toRem(10) toRem(25);
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2),
+      0px -5px 10px rgba(255, 255, 255, 0.15);
 
     @media all and (min-width: 768px) {
       // font-size: 25px;
@@ -116,7 +127,7 @@
   @media all and (min-width: 1024px) {
     .instagram {
       padding: toRem(0);
-      padding: toRem(30) toRem(10);
+      padding: toRem(30) toRem(10.5);
     }
     .cv {
       padding: toRem(0);
@@ -129,13 +140,16 @@
     font-family: $font-secondary;
     color: $primary-font-color;
     font-size: toRem(20);
+    // text-shadow: 2px 4px 4px $icons-color;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2),
+      0px -5px 10px rgba(255, 255, 255, 0.15);
 
     @media all and (min-width: 768px) {
       font-size: toRem(25);
     }
 
     @media all and (min-width: 1024px) {
-      font-size: toRem(30);
+      font-size: toRem(35);
     }
   }
 
@@ -147,6 +161,9 @@
     border-radius: 20px;
     margin-bottom: 60px;
     display: flex;
+    animation-name: arrow-btn;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 
     @media all and (min-width: 768px) {
       height: 50px;
@@ -163,10 +180,81 @@
 
       @media all and (min-width: 768px) {
         margin-top: toRem(2);
-        margin-left: toRem(13);
+        margin-left: toRem(13.5);
         font-size: toRem(30);
         border-radius: 30px;
       }
     }
+  }
+}
+
+.landingSection_list-element:hover {
+  box-shadow: 0 0 20px;
+  transform: scale(1.1);
+  background-color: $statement-color;
+}
+
+.landingSection_list-element:active {
+  background-color: $color-lilac;
+}
+
+@keyframes arrow-btn {
+  0% {
+    transform: translateY(0%);
+    // border-style: dashed;
+    // border-style: dotted;
+    // border-color: $color-lilac;
+  }
+  10% {
+    transform: translateY(10%);
+    // border-style: dashed;
+    // border-style: dotted;
+    // border-color: $color-lilac;
+  }
+  20% {
+    transform: translateY(20%);
+    // border-style: dashed;
+    // border-style: dotted;
+    // border-color: $color-lilac;
+  }
+  30% {
+    transform: translateY(30%);
+    // border-style: dotted;
+    // border-color: $statement-color;
+  }
+  40% {
+    transform: translateY(40%);
+    // border-style: dotted;
+    // border-color: $statement-color;
+  }
+  50% {
+    transform: translateY(50%);
+    // border-style: dotted;
+    // border-color: $statement-color;
+  }
+  60% {
+    transform: translateY(40%);
+    // border-style: dotted;
+    // border-color: $statement-color;
+  }
+  70% {
+    transform: translateY(30%);
+    // border-style: dotted;
+    // border-color: $statement-color;
+  }
+  80% {
+    transform: translateY(20%);
+    // border-style: dotted;
+    // border-color: $statement-color;
+  }
+  90% {
+    transform: translateY(10%);
+    // border-style: dotted;
+    // border-color: $statement-color;
+  }
+  100% {
+    transform: translateY(0%);
+    // border-style: dotted;
+    // border-color: $statement-color;
   }
 }

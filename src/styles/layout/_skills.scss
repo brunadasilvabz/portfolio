@@ -70,8 +70,15 @@
       font-size: toRem(30);
       margin: toRem(20);
       color: $icons-color;
+      text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2),
+        0px -5px 10px rgba(255, 255, 255, 0.15);
 
       @media all and (min-width: 768px) {
+        margin-top: toRem(0);
+        margin-bottom: toRem(10);
+      }
+
+      @media all and (min-width: 1024px) {
         margin-top: toRem(15);
         margin-bottom: toRem(10);
       }
@@ -81,6 +88,8 @@
       font-size: toRem(30);
       margin-bottom: toRem(15);
       color: $primary-font-color;
+      text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2),
+        0px -5px 10px rgba(255, 255, 255, 0.15);
 
       @media all and (min-width: 768px) {
         margin-top: toRem(10);
@@ -117,9 +126,11 @@
       font-size: toRem(30);
       margin: toRem(10);
       color: $icons-color;
+      text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2),
+        0px -5px 10px rgba(255, 255, 255, 0.15);
 
       @media all and (min-width: 768px) {
-        margin-top: toRem(10);
+        margin-top: toRem(40);
         margin-bottom: toRem(10);
       }
 
@@ -137,6 +148,8 @@
       font-size: toRem(30);
       margin-bottom: toRem(15);
       color: $primary-font-color;
+      text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2),
+        0px -5px 10px rgba(255, 255, 255, 0.15);
 
       @media all and (min-width: 768px) {
         margin-top: toRem(10);
@@ -170,10 +183,13 @@
 }
 
 .tech-icons {
-  height: 45px;
+  font-size: toRem(45);
+  padding: toRem(10);
 
   @media all and (min-width: 768px) {
-    height: 40px;
+    // height: 40px;
+    font-size: toRem(40);
+    padding: toRem(0);
   }
 }
 
@@ -190,11 +206,23 @@
     @media all and (min-width: 768px) {
       padding: toRem(0) toRem(10);
       font-size: toRem(18);
-      // line-height: 1.8;
+      line-height: 2.1;
     }
 
     @media all and (min-width: 1024px) {
       font-size: toRem(20);
+      line-height: 1.8;
     }
   }
+}
+
+.tech-icons:hover {
+  color: $statement-color;
+  // text-decoration: underline;
+}
+
+.skillsSection_div:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }

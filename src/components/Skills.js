@@ -1,11 +1,11 @@
-import html5 from "../images/html5.svg";
-import css3 from "../images/css3.svg";
-import sass from "../images/sass.svg";
-import javascript from "../images/javascript.svg";
-import react from "../images/html5.svg";
-import node from "../images/react.svg";
-import git from "../images/git.svg";
-import github from "../images/github.svg";
+// import html5 from "../images/html.png";
+// import css3 from "../images/css.png";
+// import sass from "../images/sass.png";
+// import javascript from "../images/js.png";
+// import react from "../images/react.png";
+// import node from "../images/nodejs.png";
+// import git from "../images/git.png";
+// import github from "../images/github.png";
 
 const Skills = () => {
     return(
@@ -29,7 +29,7 @@ const Skills = () => {
                 <div className="skillsSection_tech">
                     <i class="skillsSection_tech-icon fa-solid fa-code"></i>
                     <h3 className="skillsSection_tech-title">Habilidades técnicas</h3>
-                        <ul className="skillsSection_tech-list">
+                        {/* <ul className="skillsSection_tech-list">
                             <li><img className="tech-icons" src={html5} alt="html"/></li>
                             <li><img className="tech-icons" src={css3} alt="html"/></li>
                             <li><img className="tech-icons" src={sass} alt="html"/></li>
@@ -38,6 +38,16 @@ const Skills = () => {
                             <li><img className="tech-icons" src={node} alt="html"/></li>
                             <li><img className="tech-icons" src={git} alt="html"/></li>
                             <li><img className="tech-icons" src={github} alt="html"/></li>
+                        </ul> */}
+                        <ul className="skillsSection_tech-list">
+                            <li><i class="tech-icons fa-brands fa-html5"></i></li>
+                            <li><i class="tech-icons fa-brands fa-css3-alt"></i></li>
+                            <li><i class="tech-icons fa-brands fa-sass"></i></li>
+                            <li><i class="tech-icons fa-brands fa-square-js"></i></li>
+                            <li><i class="tech-icons fa-brands fa-react"></i></li>
+                            <li><i class="tech-icons fa-brands fa-node"></i></li>
+                            <li><i class="tech-icons fa-brands fa-git"></i></li>
+                            <li><i class="tech-icons fa-brands fa-github"></i></li>
                         </ul>
                 </div>
             </div>

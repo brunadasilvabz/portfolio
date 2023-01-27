@@ -15,6 +15,8 @@
     margin-top: toRem(25);
     font-size: toRem(40);
     color: $secondary-color;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2),
+      0px -5px 10px rgba(255, 255, 255, 0.15);
 
     @media all and (min-width: 768px) {
       font-size: toRem(50);

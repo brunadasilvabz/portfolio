@@ -11,6 +11,8 @@
     margin-top: toRem(25);
     font-size: toRem(40);
     color: $primary-font-color;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2),
+      0px -5px 10px rgba(255, 255, 255, 0.15);
 
     @media all and (min-width: 768px) {
       font-size: toRem(50);
@@ -46,12 +48,17 @@
 
     &-elements {
       display: flex;
-      flex-direction: column;
+      gap: 25px;
       // gap: 20px;
 
       @media all and (min-width: 768px) {
         flex-direction: row;
-        gap: 30px;
+        gap: 40px;
+      }
+
+      @media all and (min-width: 1024px) {
+        flex-direction: row;
+        gap: 45px;
       }
     }
   }
@@ -82,36 +89,42 @@
 }
 
 .link_element {
-  margin: toRem(20) toRem(0) toRem(20) toRem(0);
-  background-color: $statement-color;
-  height: 60px;
-  width: 160px;
-  text-align: center;
-  padding-top: toRem(15);
+  background-color: $color-lilac;
+  // margin: toRem(20) toRem(0) toRem(20) toRem(0);
+  // background-color: $statement-color;
+  // height: 60px;
+  // width: 160px;
+  // text-align: center;
+  padding: toRem(15);
   border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
   @media all and (min-width: 768px) {
-    width: 160px;
+    // width: 160px;
   }
 
   @media all and (min-width: 1024px) {
-    width: 180px;
-    // text-align: center;
+    // width: 180px;
+    // // text-align: center;
   }
 
   &-link {
-    font-size: toRem(18);
-    text-decoration: none;
-    color: $primary-font-color;
-    // margin-top: 50px;
+    // font-size: toRem(18);
+    // text-decoration: none;
+    // color: $primary-font-color;
+    // // margin-top: 50px;
+    font-size: toRem(40);
+    text-align: center;
 
     @media all and (min-width: 768px) {
-      font-size: toRem(20);
+      font-size: toRem(60);
     }
 
     @media all and (min-width: 1024px) {
-      font-size: toRem(25);
-      padding: toRem(15);
+      font-size: toRem(80);
+      // padding: toRem(15);
     }
   }
 }
@@ -173,6 +186,8 @@
       border-color: $primary-font-color;
       border-radius: 15px;
       font-size: toRem(20);
+      text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2),
+        0px -5px 10px rgba(255, 255, 255, 0.15);
 
       @media all and (min-width: 768px) {
         width: 100px;
@@ -194,4 +209,21 @@
   @media all and (min-width: 1024px) {
     font-size: toRem(30);
   }
+}
+
+.link_element:hover {
+  box-shadow: 0 0 20px;
+  transform: scale(1.1);
+  background-color: $statement-color;
+}
+
+.form_section-btn:hover {
+  box-shadow: 0 0 20px;
+  transform: scale(1.1);
+}
+
+.form_section-btn:active {
+  box-shadow: 0 0 20px;
+  transform: scale(1.1);
+  background-color: $color-lilac;
 }

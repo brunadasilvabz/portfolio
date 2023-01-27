@@ -26,8 +26,8 @@ const ContactMe = (props) => {
           <div className="contactSection_div">
             <p className="contactSection_div-text">Puedes ponerte en contacto conmigo en mis redes sociales:</p>
             <div className="contactSection_div-elements">
-              <div className="link_element"><a className="link_element-link" href=" https://www.linkedin.com/in/brunadasilvabarrozo/" target="_blank">Linkedin</a></div>
-              <div className="link_element"><a className="link_element-link" href="https://twitter.com/brunadasilvabz" target="_blank" >Twitter</a></div>
+              <div className="link_element"><a href=" https://www.linkedin.com/in/brunadasilvabarrozo/" target="_blank"><i class="link_element-link fa-brands fa-linkedin"></i></a></div>
+              <div className="link_element"><a href="https://twitter.com/brunadasilvabz" target="_blank"><i class="link_element-link fa-brands fa-square-twitter"></i></a></div>
             </div>
           </div>
           <div className="contactSection_formDiv">
