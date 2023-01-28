@@ -16,13 +16,14 @@ const Skills = () => {
                     <i class="skillsSection_soft-icon fa-solid fa-user-gear"></i>
                     <h3 className="skillsSection_soft-title">Soft skills</h3>
                     <ul className="softSkills_list">
-                        <li className="softSkills_list-element">Trabajo en remoto
-                        </li>
+                        
                         <li className="softSkills_list-element">Trabajo en equipo
                         </li>
                         <li className="softSkills_list-element">Comunicación efectiva
                         </li>
                         <li className="softSkills_list-element">Filosofía Agile y marco de trabajo Scrum
+                        </li>
+                        <li className="softSkills_list-element">Trabajo en remoto
                         </li>
                     </ul>  
                 </div>

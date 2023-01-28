@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import {Carousel, Card} from 'react-bootstrap';
 import "../styles/components/slide.scss";
 import rickMorty from '../images/rickymorty.png';
@@ -29,8 +30,8 @@ const SlideBigScreen = () => {
               HTML, SASS, API, React
             </Card.Text>
             <div className='card_body-div'>
-              <button className='button' variant="primary">Código</button>
-              <button className='button' variant="primary">Web</button>
+              <button className='button' variant="primary"><a className='btn-link' href='https://github.com/brunadasilvabz/modulo-3-evaluacion-final-brunadasilvabz' target="_blank">Código</a></button>
+              <button className='button' variant="primary"><a className='btn-link' href='https://brunadasilvabz.github.io/modulo-3-evaluacion-final-brunadasilvabz/' target="_blank">Web</a></button>
             </div>
           </Card.Body>
         </Card>
@@ -47,8 +48,8 @@ const SlideBigScreen = () => {
               HTML, SASS, API, JavaScript
             </Card.Text>
             <div className='card_body-div'>
-              <button className='button' variant="primary">Código</button>
-              <button className='button' variant="primary">Web</button>
+              <button className='button' variant="primary"><a className='btn-link' href='https://github.com/brunadasilvabz/modulo-2-evaluacion-final-brunadasilvabz' target="_blank">Código</a></button>
+              <button className='button' variant="primary"><a className='btn-link' href='https://brunadasilvabz.github.io/modulo-2-evaluacion-final-brunadasilvabz/' target="_blank">Web</a></button>
             </div>
           </Card.Body>
         </Card>
@@ -65,8 +66,8 @@ const SlideBigScreen = () => {
               HTML, SASS
             </Card.Text>
             <div className='card_body-div'>
-              <button className='button' variant="primary">Código</button>
-              <button className='button' variant="primary">Web</button>
+              <button className='button' variant="primary"><a className='btn-link' href='https://github.com/brunadasilvabz/modulo-1-evaluacion-final-brunadasilvabz' target="_blank">Código</a></button>
+              <button className='button' variant="primary"><a className='btn-link' href='https://brunadasilvabz.github.io/modulo-1-evaluacion-final-brunadasilvabz/' target="_blank">Web</a></button>
             </div>
           </Card.Body>
         </Card>
@@ -88,8 +89,8 @@ const SlideBigScreen = () => {
               HTML, SASS, React, SQL
             </Card.Text>
             <div className='card_body-div'>
-              <button className='button' variant="primary">Código</button>
-              <button className='button' variant="primary">Web</button>
+              <button className='button' variant="primary"><a className='btn-link' href='https://github.com/brunadasilvabz/project-promo-r-module-4-team-5-brunadasilvabz' target="_blank">Código</a></button>
+              <button className='button' variant="primary"><a className='btn-link' href='https://project-promo-r-module-4-team-5-production.up.railway.app/' target="_blank">Web</a></button>
             </div>
           </Card.Body>
         </Card>
@@ -106,8 +107,8 @@ const SlideBigScreen = () => {
               HTML, SASS, JavaScript
             </Card.Text>
             <div className='card_body-div'>
-              <button className='button' variant="primary">Código</button>
-              <button className='button' variant="primary">Web</button>
+              <button className='button' variant="primary"><a className='btn-link' href='https://github.com/brunadasilvabz/project-promo-r-module-2-team-2-brunadasilvabz' target="_blank">Código</a></button>
+              <button className='button' variant="primary"><a className='btn-link' href='http://beta.adalab.es/project-promo-r-module-2-team-2/' target="_blank">Web</a></button>
             </div>
           </Card.Body>
         </Card>
@@ -124,8 +125,8 @@ const SlideBigScreen = () => {
               HTML, SASS
             </Card.Text>
             <div className='card_body-div'>
-              <button className='button' variant="primary">Código</button>
-              <button className='button' variant="primary">Web</button>
+              <button className='button' variant="primary"><a className='btn-link' href='https://github.com/brunadasilvabz/project-promo-r-module-1-team-5-brunadasilvabz' target="_blank">Código</a></button>
+              <button className='button' variant="primary"><a className='btn-link' href='http://beta.adalab.es/project-promo-r-module-1-team-5/' target="_blank">Web</a></button>
             </div>
           </Card.Body>
         </Card>

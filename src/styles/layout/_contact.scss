@@ -32,17 +32,20 @@
     gap: 10px;
 
     &-text {
-      padding-left: toRem(5);
+      // padding-left: toRem(5);
       font-size: toRem(18);
       color: $primary-font-color;
       // text-align: center;
 
       @media all and (min-width: 768px) {
         font-size: toRem(20);
+        padding: toRem(0) toRem(100);
+        margin-top: toRem(10);
       }
 
       @media all and (min-width: 1024px) {
         font-size: toRem(25);
+        padding: toRem(0) toRem(160);
       }
     }
 
@@ -72,7 +75,7 @@
     text-align: center;
 
     &-text {
-      padding-left: toRem(5);
+      // padding-left: toRem(5);
       font-size: toRem(18);
       color: $primary-font-color;
       margin-bottom: toRem(30);
@@ -141,6 +144,7 @@
   @media all and (min-width: 768px) {
     width: 100%;
     margin-top: toRem(20);
+    margin-bottom: toRem(20);
   }
 
   @media all and (min-width: 1024px) {
@@ -233,4 +237,103 @@
   box-shadow: 0 0 20px;
   transform: scale(1.1);
   background-color: $color-lilac;
+}
+
+.span-text-contact {
+  color: $primary-color;
+  font-weight: 500;
+}
+
+// .contact-arrow {
+//   font-size: toRem(25);
+//   text-align: center;
+//   margin-left: toRem(10.5);
+//   align-self: center;
+//   color: $statement-color;
+
+//   @media all and (min-width: 768px) {
+//     margin-top: toRem(2);
+//     margin-left: toRem(13.5);
+//     font-size: toRem(30);
+//     border-radius: 30px;
+//   }
+// }
+
+.contactSection_goBack {
+  display: flex;
+  gap: 15px;
+  text-decoration: none;
+
+  &-text {
+    color: $primary-font-color;
+  }
+
+  &-arrow {
+    font-size: toRem(25);
+    color: $icons-color;
+    animation-name: contact-arrow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes contact-arrow {
+  0% {
+    transform: translateY(-40%);
+    // border-style: dashed;
+    // border-style: dotted;
+    // border-color: $color-lilac;
+  }
+  10% {
+    transform: translateY(-30%);
+    // border-style: dashed;
+    // border-style: dotted;
+    // border-color: $color-lilac;
+  }
+  20% {
+    transform: translateY(-20%);
+    // border-style: dashed;
+    // border-style: dotted;
+    // border-color: $color-lilac;
+  }
+  30% {
+    transform: translateY(-10%);
+    // border-style: dotted;
+    // border-color: $statement-color;
+  }
+  40% {
+    transform: translateY(0%);
+    // border-style: dotted;
+    // border-color: $statement-color;
+  }
+  50% {
+    transform: translateY(10%);
+    // border-style: dotted;
+    // border-color: $statement-color;
+  }
+  60% {
+    transform: translateY(0%);
+    // border-style: dotted;
+    // border-color: $statement-color;
+  }
+  70% {
+    transform: translateY(-10%);
+    // border-style: dotted;
+    // border-color: $statement-color;
+  }
+  80% {
+    transform: translateY(-20%);
+    // border-style: dotted;
+    // border-color: $statement-color;
+  }
+  90% {
+    transform: translateY(-30%);
+    // border-style: dotted;
+    // border-color: $statement-color;
+  }
+  100% {
+    transform: translateY(-40%);
+    // border-style: dotted;
+    // border-color: $statement-color;
+  }
 }

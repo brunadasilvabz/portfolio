@@ -9,12 +9,12 @@
 
   @media all and (min-width: 768px) {
     padding-bottom: toRem(45);
-    height: toRem(300);
+    height: toRem(350);
   }
 
   @media all and (min-width: 1024px) {
     padding: toRem(35) toRem(50) toRem(50) toRem(50);
-    height: toRem(350);
+    // height: toRem(400);
   }
 
   &_div {
@@ -31,7 +31,11 @@
       flex-direction: row;
       gap: 5px;
       margin: toRem(0) toRem(15);
-      transform: translateY(-45%);
+      transform: translateY(-50%);
+    }
+
+    @media all and (min-width: 1024px) {
+      transform: translateY(-55%);
     }
   }
 

@@ -24,14 +24,14 @@ const ContactMe = (props) => {
           <h2 className="contactSection_title">Contacto</h2>
           
           <div className="contactSection_div">
-            <p className="contactSection_div-text">Puedes ponerte en contacto conmigo en mis redes sociales:</p>
-            <div className="contactSection_div-elements">
+            <p className="contactSection_div-text">Puedes ponerte en contacto conmigo en mis <span className='span-text-contact'>redes sociales</span> o escribirme directamente a través de este <span className='span-text-contact'>formulario</span>. ¡Estaré encantada de contestarte!</p>
+            {/* <div className="contactSection_div-elements">
               <div className="link_element"><a href=" https://www.linkedin.com/in/brunadasilvabarrozo/" target="_blank"><i class="link_element-link fa-brands fa-linkedin"></i></a></div>
               <div className="link_element"><a href="https://twitter.com/brunadasilvabz" target="_blank"><i class="link_element-link fa-brands fa-square-twitter"></i></a></div>
-            </div>
+            </div> */}
           </div>
           <div className="contactSection_formDiv">
-            <p className="contactSection_formDiv-text">También puedes escribirme directamente un mensaje aquí:</p>
+            {/* <p className="contactSection_formDiv-text">También puedes escribirme directamente un mensaje aquí:</p> */}
 
 
               <form ref={form} onSubmit={sendEmail} className="form" action="">
@@ -52,6 +52,12 @@ const ContactMe = (props) => {
                 </div>
                 <p className='statusText'>{props.statusMessage}</p>
               </form>
+          </div>
+          <div>
+            <a className='contactSection_goBack' href="#home">
+              <p className='contactSection_goBack-text'>Volver al inicio</p>
+              <i className="contactSection_goBack-arrow fa-solid fa-arrow-up-long"></i>
+              </a>
           </div>
         </section>
     );
