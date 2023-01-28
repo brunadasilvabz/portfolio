@@ -5,6 +5,7 @@ import adaCards from '../images/adacards.png';
 import alohomora from '../images/alohomora.png';
 import pillow from '../images/pillows.png';
 import anonymous from '../images/anonymous.jpg';
+import breakingBad from '../images/breakingbad.png';
 
 
 const SlideBigScreen = () => {
@@ -35,7 +36,7 @@ const SlideBigScreen = () => {
         </Card>
         <Card className='card' style={{ width: '18rem' }}>
           <div className='card_imgWrapper'>
-            <Card.Img className="img" variant="top" src="#" />
+            <Card.Img className="img" variant="top" src={breakingBad} />
           </div>
           <Card.Body className='card_body'>
             <Card.Title className='card_body-title'>Breaking Bad</Card.Title>

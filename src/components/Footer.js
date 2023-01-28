@@ -11,8 +11,8 @@ const Footer = () => {
               className="fa-brands fa-linkedin"></i></a></li>
             <li><a className="footer_list-element" href="https://twitter.com/brunadasilvabz" target="_blank" rel="noreferrer"><i
               className="fa-brands fa-square-twitter"></i></a></li>
-            <li><a className="footer_list-element" href="" target="_blank"><i className="fa-brands fa-square-instagram"></i></a>
-            </li>
+            {/* <li><a className="footer_list-element" href="" target="_blank"><i className="fa-brands fa-square-instagram"></i></a>
+            </li> */}
           </ul>
      </footer>
     );
