@@ -155,6 +155,7 @@
       text-align: start;
       margin-top: toRem(20);
       color: $primary-font-color;
+      font-weight: 500;
 
       @media all and (min-width: 1024px) {
         font-size: toRem(25);
@@ -166,6 +167,7 @@
       border-color: $primary-font-color;
       border-radius: 10px;
       padding: toRem(5);
+      font-family: $font-main;
 
       @media all and (min-width: 768px) {
         padding: toRem(10);
@@ -176,11 +178,16 @@
       }
     }
 
+    &-textarea {
+      border: solid 2px;
+    }
+
     &-btn {
       margin-top: toRem(20);
       padding-bottom: toRem(5);
       height: 40px;
       width: 80px;
+      font-weight: 500;
       color: $primary-font-color;
       background-color: $statement-color;
       border-color: $primary-font-color;

@@ -45,7 +45,7 @@ const ContactMe = (props) => {
                 </div>
                 <div className="form_section">
                   <legend className="form_section-legend" for="message">Mensaje</legend>
-                  <textarea className="form_section-input" type="text" name="message" id="message" placeholder="¿Qué necesitas?" required/>
+                  <textarea className="form_section-textarea form_section-input" type="text" name="message" id="message" placeholder="¿Qué necesitas?" required/>
                 </div>
                 <div className="form_section">
                   <input className="form_section-btn" type="submit" id="submit" value="enviar"></input>

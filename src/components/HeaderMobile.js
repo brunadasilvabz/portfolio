@@ -10,7 +10,7 @@ const HeaderMobile = (props) => {
   //   setShowNav();
   // }
   return (
-    <div className="showSmaller">
+    <div className="showMenuBtn">
       <button className="header_button" onClick={() =>setShowNav(!showNav)}><i class="fa-solid fa-seedling header_button-icon"></i></button>
       {
         showNav?<nav className="navElements">

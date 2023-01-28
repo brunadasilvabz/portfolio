@@ -130,7 +130,7 @@
         0px -5px 10px rgba(255, 255, 255, 0.15);
 
       @media all and (min-width: 768px) {
-        margin-top: toRem(40);
+        margin-top: toRem(50);
         margin-bottom: toRem(10);
       }
 
@@ -191,6 +191,12 @@
     font-size: toRem(40);
     padding: toRem(0);
   }
+
+  @media all and (min-width: 768px) {
+    // height: 40px;
+    font-size: toRem(50);
+    padding: toRem(0);
+  }
 }
 
 .softSkills_list {
@@ -205,12 +211,12 @@
 
     @media all and (min-width: 768px) {
       padding: toRem(0) toRem(10);
-      font-size: toRem(18);
+      font-size: toRem(20);
       line-height: 2.1;
     }
 
     @media all and (min-width: 1024px) {
-      font-size: toRem(20);
+      font-size: toRem(22);
       line-height: 1.8;
     }
   }

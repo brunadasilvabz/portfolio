@@ -2,22 +2,22 @@
 
 .carousel {
   // background-color: red;
-  height: toRem(580);
+  height: toRem(620);
   border-radius: 20px;
 
   @media all and (min-width: 768px) {
-    // width: 100vh;
-    width: toRem(700);
-    height: toRem(625);
+    width: toRem(320);
+    // width: toRem(700);
+    // height: toRem(625);
   }
 
   @media all and (min-width: 1024px) {
-    height: toRem(580);
+    height: toRem(600);
     // width: toRem(100);
     // max-width: 1000px;
     // width: 100%;
     // width: 900px;
-    width: toRem(950);
+    width: toRem(1100);
   }
 
   &_item {
@@ -26,11 +26,11 @@
     border-radius: 20px;
 
     @media all and (min-width: 768px) {
-      // background-color: red;
-      overflow: hidden;
-      height: 100%;
-      overflow: hidden;
-      width: 100%;
+      // // background-color: red;
+      // overflow: hidden;
+      // height: 100%;
+      // overflow: hidden;
+      // width: 100%;
     }
 
     @media all and (min-width: 1024px) {
@@ -52,16 +52,16 @@
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
   @media all and (min-width: 768px) {
-    // background-color: red;
-    margin: toRem(20) toRem(15);
-    width: calc(100% / 3);
-    // border-radius: 20px;
-    // border-color: black;
+    // // background-color: red;
+    // margin: toRem(20) toRem(15);
+    // width: calc(100% / 3);
+    // // border-radius: 20px;
+    // // border-color: black;
   }
 
   @media all and (min-width: 1024px) {
     // background-color: red;
-    // margin: toRem(20) 15px;
+    margin-top: toRem(30);
     // width: calc(100% / 3);
     // width: 300px;
   }
@@ -83,7 +83,7 @@
       max-height: 100%;
 
       @media all and (min-width: 768px) {
-        width: 100%;
+        // width: 100%;
       }
 
       @media all and (min-width: 1024px) {
@@ -95,6 +95,11 @@
   &_body {
     background-color: $secondary-color;
     border-radius: 20px;
+    min-height: toRem(380);
+    max-height: toRem(380);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
     // &-title {
 
@@ -104,20 +109,31 @@
 
     // }
 
+    @media all and (min-width: 768px) {
+      // min-height: toRem(400);
+      // max-height: toRem(400);
+    }
+
+    @media all and (min-width: 1024px) {
+      min-height: toRem(320);
+      max-height: toRem(320);
+    }
+
     &-div {
       display: flex;
       flex-direction: column;
       gap: 15px;
 
       @media all and (min-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        // width: 100%;
+        // display: flex;
+        // flex-direction: column;
+        // // width: 100%;
       }
 
       @media all and (min-width: 1024px) {
         display: flex;
         flex-direction: row;
+        width: 100%;
       }
     }
   }
@@ -128,10 +144,18 @@
   border-color: $statement-color;
   height: 45px;
   color: $primary-font-color;
+  background-color: $color-lilac;
+  border-color: $icons-color;
+  font-size: toRem(18);
+  border-radius: 10px;
 
   @media all and (min-width: 1024px) {
     display: flex;
+    width: 50%;
     height: 65px;
+    font-size: toRem(20);
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -154,31 +178,31 @@
   margin-right: toRem(0);
 }
 
-@media all and (min-width: 768px) {
-  .carousel-item.active,
-  .carousel-item-next,
-  .carousel-item-prev {
-    display: flex;
-  }
+// @media all and (min-width: 768px) {
+//   .carousel-item.active,
+//   .carousel-item-next,
+//   .carousel-item-prev {
+//     display: flex;
+//   }
 
-  .carousel-control-prev {
-    width: 10px;
-    // padding-right: 40px;
-  }
+//   .carousel-control-prev {
+//     width: 10px;
+//     // padding-right: 40px;
+//   }
 
-  .carousel-control-next {
-    width: 30px;
-  }
+//   .carousel-control-next {
+//     width: 30px;
+//   }
 
-  .carousel-control-prev-icon {
-    margin-left: toRem(-55);
-  }
+//   .carousel-control-prev-icon {
+//     margin-left: toRem(-55);
+//   }
 
-  .carousel-control-next-icon {
-    margin-right: toRem(-50);
-    // width: 30px;
-  }
-}
+//   .carousel-control-next-icon {
+//     margin-right: toRem(-50);
+//     // width: 30px;
+//   }
+// }
 
 @media all and (min-width: 1024px) {
   .carousel-item.active,
@@ -211,4 +235,19 @@
 
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 12px 10px 2px;
+}
+
+.button:hover {
+  box-shadow: 0 0 10px $primary-font-color;
+  transform: scale(1.02);
+  background-color: $statement-color;
+  color: $primary-font-color;
+  border-color: $primary-font-color;
+}
+
+.button:active {
+  // box-shadow: 0 0 20px;
+  transform: scale(1.02);
+  background-color: $primary-color;
+  color: $secondary-color;
 }

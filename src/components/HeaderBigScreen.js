@@ -2,7 +2,7 @@
 
 const HeaderBigScreen = () => {
     return (
-            <nav className="showBigger navElements">
+            <nav className="notShowMenuBtn navElements">
                 <i class="fa-solid fa-seedling navElements_icon"></i>
                 <ul className="navElements_list">
                     {/* <li><a className="navElements_list-link" href="#home">Inicio</a></li> */}

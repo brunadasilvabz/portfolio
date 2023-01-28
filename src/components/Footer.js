@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <footer className="footer">
-          <p className="footer_text">&copy; Bruna Da Silva</p>
+          <p className="footer_text">&copy; 2023 Bruna Da Silva</p>
           <ul className="footer_list">
             <li><a className="footer_list-element" href="https://github.com/brunadasilvabz" target="_blank" rel="noreferrer"><i
               className="fa-brands fa-square-github"></i></a>

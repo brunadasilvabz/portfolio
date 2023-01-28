@@ -61,14 +61,26 @@
 //   }
 // }
 
-@media all and (min-width: 0px) and (max-width: 767px) {
+@media all and (min-width: 0px) and (max-width: 1023px) {
   .showBigger {
     display: none;
   }
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 1024px) {
   .showSmaller {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .showMenuBtn {
+    display: none;
+  }
+}
+
+@media all and (min-width: 0px) and (max-width: 767px) {
+  .notShowMenuBtn {
     display: none;
   }
 }

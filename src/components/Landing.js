@@ -16,7 +16,7 @@ const Landing = () => {
             target="_blank">linkedin</a></li>
             <li className="landingSection_list-element"><a className="link" href="https://twitter.com/brunadasilvabz" target="_blank" rel="noreferrer">twitter</a>
             </li>
-            <li className="landingSection_list-element"><a className="link instagram" href="" target="_blank">instagram</a></li>
+            {/* <li className="landingSection_list-element"><a className="link instagram" href="" target="_blank">instagram</a></li> */}
             <li className="landingSection_list-element"><a className="link cv" href={cvBruna} download="CV Bruna Da Silva"
             target="_blank">descargar cv</a>
             </li>
