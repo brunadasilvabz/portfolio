@@ -4,11 +4,13 @@
   // background-color: red;
   height: toRem(620);
   border-radius: 20px;
+  max-width: toRem(320);
 
   @media all and (min-width: 768px) {
-    width: toRem(320);
+    // width: toRem(320);
     // width: toRem(700);
     // height: toRem(625);
+    max-width: toRem(320);
   }
 
   @media all and (min-width: 1024px) {
@@ -17,7 +19,8 @@
     // max-width: 1000px;
     // width: 100%;
     // width: 900px;
-    width: toRem(970);
+    // width: toRem(970);
+    max-width: toRem(970);
   }
 
   &_item {

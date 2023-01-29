@@ -189,6 +189,7 @@
 .tech-icons {
   font-size: toRem(45);
   padding: toRem(10);
+  color: $icons-color;
 
   @media all and (min-width: 768px) {
     // height: 40px;

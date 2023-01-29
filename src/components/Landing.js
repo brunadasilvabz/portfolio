@@ -18,7 +18,7 @@ const Landing = () => {
             </li>
             {/* <li className="landingSection_list-element"><a className="link instagram" href="" target="_blank">instagram</a></li> */}
             <li className="landingSection_list-element"><a className="link cv" href={cvBruna} download="CV Bruna Da Silva"
-            target="_blank">descargar cv</a>
+            target="_blank">CV</a>
             </li>
           </ul>
 
