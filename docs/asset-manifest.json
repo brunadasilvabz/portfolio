@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.cd633250.css",
+    "main.css": "./static/css/main.1e97f348.css",
     "main.js": "./static/js/main.bc8374e7.js",
     "static/media/anonymous.jpg": "./static/media/anonymous.b3c4d054810d33c037d7.jpg",
     "static/media/breakingbad.png": "./static/media/breakingbad.951eb5c489be24fa259e.png",
@@ -10,11 +10,11 @@
     "static/media/cvBruna.pdf": "./static/media/cvBruna.bfa64aaf7989b65b7957.pdf",
     "static/media/adacards.png": "./static/media/adacards.a16f88441658f9bf6bfc.png",
     "index.html": "./index.html",
-    "main.cd633250.css.map": "./static/css/main.cd633250.css.map",
+    "main.1e97f348.css.map": "./static/css/main.1e97f348.css.map",
     "main.bc8374e7.js.map": "./static/js/main.bc8374e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd633250.css",
+    "static/css/main.1e97f348.css",
     "static/js/main.bc8374e7.js"
   ]
 }
