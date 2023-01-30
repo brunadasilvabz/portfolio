@@ -11,11 +11,14 @@
       border-radius: 15px;
       border: solid 2px $icons-color;
       // border-color: $primary-font-color;
+      // vertical-align: middle;
+      text-align: center;
 
       &-icon {
-        padding-top: toRem(5);
+        // padding-top: toRem(5);
         font-size: toRem(25);
         color: $statement-color;
+        vertical-align: middle;
       }
     }
   }

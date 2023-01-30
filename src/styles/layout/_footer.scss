@@ -29,6 +29,11 @@
     display: flex;
     gap: 10px;
     font-size: toRem(20);
+    color: $icons-color;
+
+    &-element {
+      color: $icons-color;
+    }
 
     @media all and (min-width: 768px) {
       font-size: toRem(25);
