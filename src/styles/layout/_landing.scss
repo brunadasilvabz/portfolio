@@ -264,3 +264,21 @@
     // border-color: $statement-color;
   }
 }
+
+.landing-arrow-link {
+  text-decoration: none;
+}
+
+.landingSection_div:hover {
+  box-shadow: 0 0 20px;
+  transform: scale(1.1);
+  // background-color: $statement-color;
+}
+
+// .landingSection_div:active {
+//   background-color: $statement-color;
+// }
+
+// .landingSection_div-arrow:active {
+//   color: $icons-color;
+// }

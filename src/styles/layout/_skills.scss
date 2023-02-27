@@ -166,12 +166,20 @@
     }
 
     &-list {
-      margin-top: toRem(15);
-      display: flex;
-      flex-wrap: wrap;
+      // margin-top: toRem(15);
+      // display: flex;
+      // flex-wrap: wrap;
+      // gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-content: center;
+      padding-left: 0;
       gap: 20px;
 
       @media all and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
         gap: 30px;
         padding: toRem(10) toRem(20);
         align-items: center;
@@ -188,7 +196,7 @@
 
 .tech-icons {
   font-size: toRem(45);
-  padding: toRem(10);
+  // padding: toRem(10);
   color: $icons-color;
 
   @media all and (min-width: 768px) {

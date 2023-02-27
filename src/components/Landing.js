@@ -23,7 +23,11 @@ const Landing = () => {
           </ul>
 
           <p className="landingSection_text">¡Sigue bajando!</p>
-          <div className="landingSection_div"><i className=" landingSection_div-arrow fa-solid fa-arrow-down"></i></div>
+          <a className="landing-arrow-link" href="#aboutMe">
+            <div className="landingSection_div">
+              <i className=" landingSection_div-arrow fa-solid fa-arrow-down"></i>
+            </div>
+          </a>
         </section>
     );
 }
