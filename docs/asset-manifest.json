@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "./static/css/main.d1e3722b.css",
-    "main.js": "./static/js/main.447ea208.js",
+    "main.js": "./static/js/main.44b63b91.js",
     "static/media/anonymous.jpg": "./static/media/anonymous.b3c4d054810d33c037d7.jpg",
     "static/media/breakingbad.png": "./static/media/breakingbad.951eb5c489be24fa259e.png",
     "static/media/rickymorty.png": "./static/media/rickymorty.13083efb365159ad774c.png",
     "static/media/pillows.png": "./static/media/pillows.ecd8af8ba29f953cb0de.png",
+    "static/media/cvBruna.pdf": "./static/media/cvBruna.be0a55515aff9661cdd2.pdf",
     "static/media/alohomora.png": "./static/media/alohomora.e9a9b719f474f31613c9.png",
-    "static/media/Bruna.pdf": "./static/media/Bruna.c47d850ef06f5b02006b.pdf",
     "static/media/adacards.png": "./static/media/adacards.a16f88441658f9bf6bfc.png",
     "index.html": "./index.html",
     "main.d1e3722b.css.map": "./static/css/main.d1e3722b.css.map",
-    "main.447ea208.js.map": "./static/js/main.447ea208.js.map"
+    "main.44b63b91.js.map": "./static/js/main.44b63b91.js.map"
   },
   "entrypoints": [
     "static/css/main.d1e3722b.css",
-    "static/js/main.447ea208.js"
+    "static/js/main.44b63b91.js"
   ]
 }
