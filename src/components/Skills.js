@@ -13,7 +13,7 @@ const Skills = () => {
             {/* <h2 className="skillsSection_title">Habilidades</h2> */}
             <div  id="skills" className="skillsSection_div">
                 <div className="skillsSection_soft">
-                    <i class="skillsSection_soft-icon fa-solid fa-user-gear"></i>
+                    <i className="skillsSection_soft-icon fa-solid fa-user-gear"></i>
                     <h3 className="skillsSection_soft-title">Soft skills</h3>
                     <ul className="softSkills_list">
                         
@@ -28,7 +28,7 @@ const Skills = () => {
                     </ul>  
                 </div>
                 <div className="skillsSection_tech">
-                    <i class="skillsSection_tech-icon fa-solid fa-code"></i>
+                    <i className="skillsSection_tech-icon fa-solid fa-code"></i>
                     <h3 className="skillsSection_tech-title">Habilidades técnicas</h3>
                         {/* <ul className="skillsSection_tech-list">
                             <li><img className="tech-icons" src={html5} alt="html"/></li>
@@ -41,14 +41,14 @@ const Skills = () => {
                             <li><img className="tech-icons" src={github} alt="html"/></li>
                         </ul> */}
                         <ul className="skillsSection_tech-list">
-                            <li><i class="tech-icons fa-brands fa-html5"></i></li>
-                            <li><i class="tech-icons fa-brands fa-css3-alt"></i></li>
-                            <li><i class="tech-icons fa-brands fa-sass"></i></li>
-                            <li><i class="tech-icons fa-brands fa-square-js"></i></li>
-                            <li><i class="tech-icons fa-brands fa-react"></i></li>
-                            <li><i class="tech-icons fa-brands fa-node"></i></li>
-                            <li><i class="tech-icons fa-brands fa-git"></i></li>
-                            <li><i class="tech-icons fa-brands fa-github"></i></li>
+                            <li><i className="tech-icons fa-brands fa-html5"></i></li>
+                            <li><i className="tech-icons fa-brands fa-css3-alt"></i></li>
+                            <li><i className="tech-icons fa-brands fa-sass"></i></li>
+                            <li><i className="tech-icons fa-brands fa-square-js"></i></li>
+                            <li><i className="tech-icons fa-brands fa-react"></i></li>
+                            <li><i className="tech-icons fa-brands fa-node"></i></li>
+                            <li><i className="tech-icons fa-brands fa-git"></i></li>
+                            <li><i className="tech-icons fa-brands fa-github"></i></li>
                         </ul>
                 </div>
             </div>

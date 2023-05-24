@@ -11,7 +11,7 @@ const HeaderMobile = (props) => {
   // }
   return (
     <div className="showMenuBtn">
-      <button className="header_button" onClick={() =>setShowNav(!showNav)}><i class="fa-solid fa-seedling header_button-icon"></i></button>
+      <button className="header_button" onClick={() =>setShowNav(!showNav)}><i className="fa-solid fa-seedling header_button-icon"></i></button>
       {
         showNav?<nav className="navElements">
         <ul className="navElements_list">

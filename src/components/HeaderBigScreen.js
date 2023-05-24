@@ -3,7 +3,7 @@
 const HeaderBigScreen = () => {
     return (
             <nav className="notShowMenuBtn navElements">
-                <i class="fa-solid fa-seedling navElements_icon"></i>
+                <i className="fa-solid fa-seedling navElements_icon"></i>
                 <ul className="navElements_list">
                     {/* <li><a className="navElements_list-link" href="#home">Inicio</a></li> */}
                     <li><a className="navElements_list-link" href="#aboutMe">Sobre mí</a></li>

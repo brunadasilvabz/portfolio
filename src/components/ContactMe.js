@@ -26,8 +26,8 @@ const ContactMe = (props) => {
           <div className="contactSection_div">
             <p className="contactSection_div-text">Puedes ponerte en contacto conmigo en mis <span className='span-text-contact'>redes sociales</span> o escribirme directamente a través de este <span className='span-text-contact'>formulario</span>. ¡Estaré encantada de contestarte!</p>
             {/* <div className="contactSection_div-elements">
-              <div className="link_element"><a href=" https://www.linkedin.com/in/brunadasilvabarrozo/" target="_blank"><i class="link_element-link fa-brands fa-linkedin"></i></a></div>
-              <div className="link_element"><a href="https://twitter.com/brunadasilvabz" target="_blank"><i class="link_element-link fa-brands fa-square-twitter"></i></a></div>
+              <div className="link_element"><a href=" https://www.linkedin.com/in/brunadasilvabarrozo/" target="_blank"><i className="link_element-link fa-brands fa-linkedin"></i></a></div>
+              <div className="link_element"><a href="https://twitter.com/brunadasilvabz" target="_blank"><i className="link_element-link fa-brands fa-square-twitter"></i></a></div>
             </div> */}
           </div>
           <div className="contactSection_formDiv">
@@ -36,15 +36,15 @@ const ContactMe = (props) => {
 
               <form ref={form} onSubmit={sendEmail} className="form" action="">
                 <div className="form_section">
-                  <legend className="form_section-legend" for="fullname">Nombre completo</legend>
+                  <legend className="form_section-legend" htmlFor="fullname">Nombre completo</legend>
                   <input className="form_section-input" type="text" name="fullname" id="fullname" placeholder="Nombre..." required/>
                 </div>
                 <div className="form_section">
-                  <legend className="form_section-legend" for="email">Email</legend>
+                  <legend className="form_section-legend" htmlFor="email">Email</legend>
                   <input className="form_section-input" type="text" name="email_id" id="email_id" placeholder="nombre.apellido@gmail.com" required/>
                 </div>
                 <div className="form_section">
-                  <legend className="form_section-legend" for="message">Mensaje</legend>
+                  <legend className="form_section-legend" htmlFor="message">Mensaje</legend>
                   <textarea className="form_section-textarea form_section-input" type="text" name="message" id="message" placeholder="¿Qué necesitas?" required/>
                 </div>
                 <div className="form_section">
